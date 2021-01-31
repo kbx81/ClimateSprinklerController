@@ -4919,7 +4919,7 @@ F 2 "LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 5850 12900 50  00
 F 3 "~" H 5850 12900 50  0001 C CNN
 F 4 "APTL3216QBC/D" V 5850 12900 50  0001 C CNN "Part"
 	1    5850 12900
-	-1   0    0    1   
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:LED D4
@@ -4931,7 +4931,7 @@ F 2 "LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 5850 13200 50  00
 F 3 "~" H 5850 13200 50  0001 C CNN
 F 4 "APTL3216SURCK" V 5850 13200 50  0001 C CNN "Part"
 	1    5850 13200
-	-1   0    0    1   
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	3550 13600 3550 13900
