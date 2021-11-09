@@ -17,7 +17,7 @@ In the [Hardware](HARDWARE.md) document you will find a general explanation of t
 
 ## TLDR
 
-The schematic and PCB were drawn in [KiCAD](https://www.kicad-pcb.org). There are two versions of the device and the
+The schematic and PCB were drawn in [KiCAD](https://www.kicad.org). There are two versions of the device and the
  project files for each can be found it its respective directory:
  - [Version 2 (WROOM)](WROOM/)
  - [Version 3 (WROVER)](WROVER/) (still a WIP and untested!)
