@@ -1,10 +1,11 @@
 # kbx's Climate and Sprinkler Controller
 
-![Climate and Sprinkler Controller](images/front-small.jpg "Climate and Sprinkler Controller")
+![Climate and Sprinkler Controller](images/Nextion/front-small.jpg "Climate and Sprinkler Controller - Nextion 7\"")
+![Climate and Sprinkler Controller](images/OLED/front-small.jpg "Climate and Sprinkler Controller - OLED")
 
-If you want to dive right in to prepare your own build, skip down to the [Design Overview](#Design-Overview) section.
+**If you want to dive right in to prepare your own build, skip down to the [Design Overview](#Design-Overview) section.**
 
-This project started as a thermostat, but, application aside, it's just a processor with some switches, sensors and maybe a display connected to it. There are footprints on the PCB for up to eleven switches and up to six sensors, to be exact. It's primarily aimed at controlling 24 volt AC loads, although its three relays will allow switching a range DC voltages if required. Therefore, it should be able to operate more or less anything over a reasonably wide range of voltages and currents, from HVAC systems to electric sprinkler valves to security system hardware and variety of other things.
+This project started as a thermostat, but, application aside, it's just a processor with some combination of switches, sensors and/or a display connected to it. There are footprints on the PCBs for up to eleven switches and up to six sensors. It's primarily aimed at controlling 24 volt AC loads, although its relay(s) will allow switching a range DC voltages if required. Therefore, it should be able to operate more or less anything over a reasonably wide range of voltages and currents, from HVAC systems to electric sprinkler valves to security system hardware and variety of other things.
 
 ## The Basics
 
@@ -66,7 +67,7 @@ Both build configurations have at least one sensor.
 
 I use a couple `satellite` units to monitor and report to Home Assistant the temperature in remote (with respect to the wired-in `controller` build) rooms. This data can then be used to guide the `controller` that is physically connected to the HVAC system. It's easy to aggregate the data from any number of `satellite` units and, with the right automations in place, use it to control the system. In addition, `satellite` units can provide alternate points of control for the system; for example, put one next to your bed and you could adjust the temperature without using your smartphone or voice control (and potentially waking up your SO in the process).
 
-`Controller` units are builds that have (some) switching hardware but may or may not have a display. If built with a display, you can probably mount it on the wall as a direct replacement for your existing thermostat. With no display, the controller unit can still control your HVAC system (or whatever else you've wired up to it), you just won't be able to interact with it locally (at least, not easily). While building it this way might seem like a silly idea, _this is the solution to the "not enough wires" problem._
+`Controller` units are builds that have (some) switching hardware but may or may not have a display. If built with a display, you can probably mount it on the wall as a direct replacement for your existing thermostat. With no display, the controller can still control your HVAC system (or whatever else you've wired up to it), you just won't be able to interact with it locally (at least, not easily). While building it this way might seem like a silly idea, _this is the solution to the "not enough wires" problem._
 
 ### Solving the "Not Enough Wires" Problem
 
@@ -78,11 +79,11 @@ Imagine, for a moment, that your HVAC system is located in the basement of your 
 
 By building one of these as a `controller` (and perhaps without a display and encoder), you can:
  1. Mount your `controller` (very) near your HVAC system -- for example, on the wall directly behind it...or hanging on the side of it
- 1. Get a short cable--say, one to two yards/meters or so--that _does_ have enough wires (or you could recycle a couple pieces of the cable you're about to disconnect in the next step!)
+ 1. Get a short cable--say, one to two yards/meters or so--that _does_ have enough wires (or you could recycle a couple pieces of the cable you'll disconnect in the next step!)
  1. Disconnect the original cable from your HVAC system to your old thermostat, then
  1. Connect the new short cable from your HVAC system to the new `controller` that's now right next to your system.
 
-What you have now is a switching device that can still _tell your HVAC system what to do_ -- you'll just need to feed it data from remote sensors (in this example, sensors that are located upstairs). These remote sensors could be the "satellite" units I described above -- or they could be something even more simple, such as [these sensor boards](https://github.com/kbx81/TempHumSensWithESP01) which I also designed. There also exists a super cheap [DHT22 + ESP-01 module](https://www.amazon.com/gp/product/B07L6CYFT9/)...although, in practice, I _really_ don't recommend DHT modules for this application -- they're too inconsistent. It's up to you!
+What you have now is a switching device that can still _tell your HVAC system what to do_ -- you'll just need to feed it data from remote sensors (in this example, sensors that are located upstairs). These remote sensors could be the "satellite" units I described above -- or they could be something even more simple, such as [these sensor boards](https://github.com/kbx81/TempHumSensWithESP01). There also exists a super cheap [DHT22 + ESP-01 module](https://www.amazon.com/gp/product/B07L6CYFT9/)...although, in practice, I _really_ don't recommend DHT modules for this application -- they're too inconsistent. It's up to you!
 
 So, to summarize:
  - The `controller` is installed (very) near your HVAC system and is connected to it with a short, easily-installed cable that _has enough wires_.
@@ -93,11 +94,11 @@ Ok, ok...I admit, it's more of a workaround than a "real solution". Even so, it 
 
 ### But What If...
 
-I'm going to assume that, since you're here and are reading this, you're at least somewhat technically inclined and are asking "What if my Home Assistant goes down??? What if my Wi-Fi goes down??? This won't work then! It's not _really_ a solution!" You may recall that, above, I stated: "While (the) sensor(s) may be omitted, this is not recommended if it is to be used as a climate control device." In the [ESPHome](https://esphome.io) [configuration](ESPHome/) that I built for my devices, two events are monitored:
+I'm going to assume that, since you're here and are reading this, you're at least somewhat technically inclined and are asking "What if my Home Assistant goes down??? What if my Wi-Fi goes down??? This won't work then so I can't use it!" You may recall that, above, I stated: "While (the) sensor(s) may be omitted, this is not recommended if it is to be used as a climate control device." In the [ESPHome](https://esphome.io) [configuration](ESPHome/) that I built for my devices, two events are monitored:
  1. The API connection state (Am I connected to [Home Assistant](https://www.home-assistant.io)?)
  1. The time since the [ESPHome](https://esphome.io) [template sensor](https://esphome.io/components/sensor/template.html) was last updated (by (an automation in) [Home Assistant](https://www.home-assistant.io))
 
-There is a timer for each of these two events; each event's respective timer is reset each time the event occurs (such a mechanism is also often called a "watchdog"). If the device either 1. loses its connection to the [Home Assistant](https://www.home-assistant.io) API ([Home Assistant](https://www.home-assistant.io) is down, Wi-Fi is down) or 2. does not receive an update to the [template sensor](https://esphome.io/components/sensor/template.html) (your automation that updates it broke or otherwise stopped running), after a duration of your choosing, it will stop using the [template sensor](https://esphome.io/components/sensor/template.html) and switch to using its local sensor (BME280/BME680/SHTC3/TMP117/DHT22/Thermistor...note that in my [configurations](ESPHome/) I revert to using the BME280 in this case). While the data from its local sensor(s) won't necessarily be consistent with the sensors located in the areas of interest, it _will_ provide the controller with _some_ data so that it can continue to function on some level. It may not be ideal, but it can keep the system from becoming totally useless (and, as such, your house doesn't freeze/turn into a sauna).
+There is a timer for each of these two events; each event's respective timer is reset each time the event occurs (such a mechanism is also often called a "watchdog"). If the device either 1. loses its connection to the [Home Assistant](https://www.home-assistant.io) API ([Home Assistant](https://www.home-assistant.io) is down, Wi-Fi is down) or 2. does not receive an update to the [template sensor](https://esphome.io/components/sensor/template.html) (your automation that updates it broke or otherwise stopped running), after a duration of your choosing, it will stop using the [template sensor](https://esphome.io/components/sensor/template.html) and switch to using its local sensor (BME280/BME680/SHTC3/TMP117/DHT22/Thermistor...note that in my [configurations](ESPHome/) I revert to using the BME680 in this case). While the data from its local sensor(s) won't necessarily be consistent with the sensors located in the areas of interest, it _will_ provide the controller with _some_ data so that it can continue to function on some level. It may not be ideal, but it can keep the system from becoming totally useless (and, as such, your house doesn't freeze/turn into a sauna).
 
 It's not a perfect solution to the original problem and I'm sure that it won't work for everybody. Still, it should offer a level of flexibility that I think many home automation enthusiasts can work with. My experience has proven that [Home Assistant](https://www.home-assistant.io), [ESPHome](https://esphome.io) and my Wi-Fi/home network are extremely reliable and that they can handle this task with no trouble at all. They break _only when I break them_.
 
@@ -109,33 +110,31 @@ Awesome! Read on for build-related information, tips, etc.
 
 If you've read through the previous section, you may have already begun thinking about how you'd like to build yours. _But,_ just in case you skipped that part, I'll outline the key points you need to consider here:
  1. How many units do you need? Are you simply replacing a single existing thermostat or do you desire/plan to extend the capabilities of your system, as well?
- 1. How many control channels do you need for your intended application? For example, if you're only controlling a heating system, you likely only need a single channel. If you have a more complex system that can (for example) heat, cool, fan, and humidify, you need at least four channels/circuits. This determines how many TRIACs and/or relays you will need.
- 1. If you are replacing an existing thermostat, _do you have enough wires?_ (My favorite problem!) If not, you may want to build a `controller` (see above) version as well as a `satellite` version (see above). As an alternative, you could build a complete version and power it with an external source through the barrel jack on the side. It is recommended to _not_ install the barrel jack if your HVAC system will provide power through the `R` and `C` wires.
- 1. Which sensor(s) do you wish to use? Are you comfortable soldering tiny parts such as the BME280/BME680, SHTC3, or TMP117 (you need a hot air station or (toaster) oven for these!)? If not, is a DHT22 or thermistor accurate/consistent enough for your liking/needs? If not, consider a BME280, SHTC3, or TMP117 module from [Adafruit](https://www.adafruit.com/product/2652) or [Sparkfun](https://www.sparkfun.com/products/13676)! They can be plugged into one of the headers along the edges of the board. (My personal favorite is the BME280.)
- 1. Do you want/need a display? If so, which display do you want to use? On the board there are headers for two different displays from Adafruit -- the [SSD1325](https://www.adafruit.com/product/2674) (grayscale, big) and the [SSD1351](https://www.adafruit.com/product/1431) (color, not big). It's absolutely possible to use a variety of other types of displays (even touch screens!) but the specifics of doing so are outside the scope of what I'll cover here.
- 1. Do you want the display to be motion-activated? This is especially important if it is an OLED-type of display -- they have a relatively short lifespan! I used an [RCWL-0516 module](https://www.amazon.com/gp/product/B07MTWZDQZ/) to accomplish this, although a PIR sensor is suitable, as well. This may be attached to J7 or, if a DHT22 is not installed, the `U6` header could be used, as well (bridge pins 3 and 4 for easy mounting). (Pro-tip: I've installed a short jumper cable with a dupont-style connector and mounted the [RCWL-0516 module](https://www.amazon.com/gp/product/B07MTWZDQZ/) into the back side of the front cover of the enclosure. This arrangement distances it from the PCB which allows it to function more reliably.)
+ 1. How many control channels do you need for your intended application? For example, if you're only controlling a heating system, you likely only need a single channel. If you have a more complex system that can (for example) heat, cool, fan and humidify, you need at least four channels/circuits. This determines how many TRIACs and/or relays you will need.
+ 1. If you are replacing an existing thermostat, _do you have enough wires?_ (My favorite problem!) If not, you may want to build a `controller` version as well as a `satellite` version (see above). As an alternative, you could build a complete version and power it with an external source through the barrel jack on the side. I recommended _not_ installing the barrel jack if your HVAC system will provide power through the `R` and `C` wires.
+ 1. Which sensor(s) do you wish to use? Are you comfortable soldering tiny parts such as the BME280, BME680, SHTC3 or TMP117 (you need a hot air station or (toaster) oven for these!)? If not, is a DHT22 or thermistor accurate/consistent enough for your liking/needs? If not, consider a BME280, BME680, SHTC3 or TMP117 module from [Adafruit](https://www.adafruit.com/product/2652) or [Sparkfun](https://www.sparkfun.com/products/13676)! They can be plugged into one of the headers along the edges of the board. (My personal favorite is the BME680.)
+ 1. Do you want/need a display? If so, which display do you want to use? On the v2 and v3 boards there are headers for two different displays -- the [SSD1325](https://www.adafruit.com/product/2674) (grayscale, big) and the [SSD1351](https://www.adafruit.com/product/1431) (color, not big). If you prefer a touchscreen, there are three different boards to match three different Nextion display sizes. I highly recommend the [Intelligent series](https://nextion.tech/intelligent-series-introduction/) or, as a less-expensive alternative, the [Enhanced series](https://nextion.tech/enhanced-series-introduction/). (I'd avoid the Basic series altogether -- they're rather sluggish.) My personal favorites are the Intelligent series models `NX8048P070-011C` (7") or the `NX8048P050-011C` (5"); I've also built HMI configurations for the Enhanced series `NX4832K035` (3.5"), `NX8048K050` (5"), and `NX8048K070` (7"). **Note that the 3.5" board does not include any switching hardware -- as such, it can only function as a satellite.**
+ 1. Do you want the display to be motion-activated? This is especially important if it is an OLED-type of display -- they have a relatively short lifespan and can burn in! I used an [RCWL-0516 module](https://www.amazon.com/gp/product/B07MTWZDQZ/) to accomplish this, although a PIR sensor is suitable, as well. There is a header on each board for this purpose. (Pro-tip: I've installed a short jumper cable with a dupont-style connector and mounted the [RCWL-0516 module](https://www.amazon.com/gp/product/B07MTWZDQZ/) into the back side of the front cover of the enclosure. This arrangement distances it from the PCB which allows it to function more reliably.)
 
 Once you have the PCBs and parts in-hand, you're ready to begin building!
 
 ### Construction
 
-The bill of materials (BoM) ([v2/WROOM](https://octopart.com/bom-tool/Y3Xc4zFl), v3/WROVER coming soon!) contains not only the list of parts, but also the component references -- it can be used to determine what parts go where on the PCB. This should be everything you need to complete assembly.
+The bill of materials (BoM) for each version of the board contains not only the list of parts, but also the component references -- it can be used to determine what parts go where on the PCB. This (as well as some patience and a steady hand) should be everything you need to complete assembly.
 
-The PCB is designed in a way that it has parts on both sides. I recommend starting with the front-facing side of the board, which is the side that has the ESP32, I/O expander, and sensors on it. This side has no "heavy" or otherwise particularly large parts on it, so assembling it first will make assembling the opposite side later on easier. I use and recommend a stencil with solder paste and a hot air soldering station, so having a board that doesn't wobble (much) when it's on the desk is important.
+Note that the PCB is designed in a way that it has parts on both sides. Examine it carefully and **observe that one side has only small parts** while the other side has several larger parts. **I highly recommend starting with the side of the board that has only small parts on it.** This side has no "heavy" or otherwise particularly large parts on it, so assembling it first will make assembling the side with the larger parts later on much easier. I use and recommend a stencil with solder paste and a hot air soldering station, so having a board that doesn't wobble (much) when it's on the desk is important.
 
 As you're assembling, you'll notice a number of solder jumpers on the board. This is a good point to discuss what they do so you can determine which ones you should bridge and how.
 
-#### Solder Jumpers
-
-##### v2/WROOM
+#### Solder Jumpers: v2/WROOM
 
 - JP1 to JP3: U2 (MCP23017) I2C address selection. These are used to modify the I2C address of the MCP23017. (*See the note below.)
 - JP4: Voltage selection for pin 3 of J4. Not connected by default; create a solder bridge to the voltage of your choosing if connecting an external device. **Not required for ESP32 programming.**
-- JP5: J4 pin 6 to ~ESP_RESET -- connects through C4 to the ~RESET line of the ESP32 to allow resetting from a connected serial adapter.
+- JP5: J4 pin 6 to ~ESP_RESET aka EN -- connects through C4 to the ~RESET aka EN line of the ESP32 to allow resetting from a connected serial adapter.
 - JP6: Connects the ESP32's GPIO26 pin to J4 pin 2.
 - JP7: Connects the ESP32's GPIO26 pin to J5 pin 6.
 - JP8: Voltage selection for U2 (MCP23017). This IC can operate with either 3.3 or 5 volts. _Use 5 volts with caution_ as the interrupt lines may put 5 volts onto the ESP32's GPIO 36 and/or 39 pins! This may cause undefined behavior and/or damage the ESP32. If using 5 volts, these pins must be configured to open drain mode on the MCP23017.
-- JP9: U3 (LMR36520) PG to ~ESP_RESET -- allows the LMR36520 to hold the ESP32 in "reset" state until the power from the buck converter has stabilized.
+- JP9: U3 (LMR36520) PG to ~ESP_RESET aka EN -- allows the LMR36520 to hold the ESP32 in "reset" state until the power from the buck converter has stabilized.
 - JP10: TMP117 Alert to MCP23017 B7. Not used if the TMP117 is not installed.
 - JP11: ESP32 GPIO26 to J10, SD_CS pin -- may be used if the [SSD1351](https://www.adafruit.com/product/1431) is installed and the SD card is to be used.
 - JP12: TMP117 A0 -- allows changing the I2C address of the TMP117. (*See the note below.)
@@ -143,36 +142,96 @@ As you're assembling, you'll notice a number of solder jumpers on the board. Thi
 - JP14: DHT22 Q2 Bypass. Shorts the drain and source pins of Q2. This transistor can be used to power-cycle the DHT22 if required by the application (they sometimes stop responding). Not used if the DHT22 is not installed. Note that this transistor could also be used to drive an LED, if required.
 - JP15: BME280 A0 -- allows changing the I2C address of the BME280. (*See the note below.)
 
-*Note: This jumper is shorted to `0` by default; if you wish to modify it, use a razor knife to cut the trace between the center and `0` pads on the board and then create a solder bridge between the center pad and the `1` pad. Use your DMM to confirm proper/expected conductivity.
+#### Solder Jumpers: v3/WROVER
+
+- JP1 to JP3: U2 (MCP23017) I2C address selection. These are used to modify the I2C address of the MCP23017. (*See the note below.)
+- JP4: MCP23017 Interrupt B output to GPI39
+- JP5: MCP23017 Interrupt A output to GPI36
+- JP6: Voltage selection for pin 3 of J4. Not connected by default; create a solder bridge to the voltage of your choosing if connecting an external device. **Not required for ESP32 programming.**
+- JP7: J4 pin 6 to ~ESP_RESET aka EN -- connects through C4 to the ~RESET aka EN line of the ESP32 to allow resetting from a connected serial adapter.
+- JP8: Connects the ESP32's GPIO26 pin to J4 pin 2.
+- JP9: Connects the ESP32's GPIO26 pin to J5 pin 6.
+- JP10: Voltage selection for U2 (MCP23017). This IC can operate with either 3.3 or 5 volts. _Use 5 volts with caution_ as the interrupt lines may put 5 volts onto the ESP32's GPIO 36 and/or 39 pins! This may cause undefined behavior and/or damage the ESP32. If using 5 volts, these pins must be configured to open drain mode on the MCP23017.
+- JP11: U3 (LMR36520) PG to ~ESP_RESET aka EN -- allows the LMR36520 to hold the ESP32 in "reset" state until the power from the buck converter has stabilized.
+- JP12: TMP117 Alert to MCP23017 B7. Not used if the TMP117 is not installed.
+- JP13: ESP32 GPIO26 to J10, SD_CS pin -- may be used if the [SSD1351](https://www.adafruit.com/product/1431) is installed and the SD card is to be used.
+- JP14: TMP117 A0 -- allows changing the I2C address of the TMP117. (*See the note below.)
+- JP15: SD_CD to MCP23017 B6 pin -- may be used if the [SSD1351](https://www.adafruit.com/product/1431) is installed and the SD card is to be used.
+- JP16: BME280 A0 -- allows changing the I2C address of the BME280. (*See the note below.)
+
+#### Solder Jumpers: Nextion 5" and 7"
+
+- JP1 to JP3: U2 (MCP23017) I2C address selection. These are used to modify the I2C address of the MCP23017. (*See the note below.)
+- JP4: MCP23017 Interrupt B output to GPI39
+- JP5: MCP23017 Interrupt A output to GPI36
+- JP6: Nextion power switch (U4) bypass
+- JP7: Voltage selection for U2 (MCP23017). This IC can operate with either 3.3 or 5 volts. _Use 5 volts with caution_ as the interrupt lines may put 5 volts onto the ESP32's GPIO 36 and/or 39 pins! This may cause undefined behavior and/or damage the ESP32. If using 5 volts, these pins must be configured to open drain mode on the MCP23017.
+- JP8: GPIO26/~RTS~ to J5 pin 2
+- JP9: Voltage selection for J5
+- JP10: U5 (LMR36520) PG to ~ESP_RESET aka EN -- allows the LMR36520 to hold the ESP32 in "reset" state until the power from the buck converter has stabilized. **Do not connect if powering from USB.**
+- JP11: Auto-reset to ESP32 EN (allows the FT232 to reset ESP32)
+- JP12: Auto-reset to ESP32 GPIO0 (allows the FT232 to invoke the ESP32's bootloader as required)
+- JP13: GPIO15 to J6 pin 6 (to be used as SPI CS)
+- JP14: BME680 A0 (*See the note below.)
+- JP15: BME280 A0 (*See the note below.)
+- JP16: TMP117 Alert to MCP23017 B7
+- JP17: TMP117 A0 (*See the note below.)
+
+#### Solder Jumpers: Nextion 3.5"
+
+- JP1: GPIO26/~RTS~ to J4 pin 2
+- JP2: Voltage selection for J4
+- JP3: GPIO15 to J5 pin 6 (to be used as SPI CS)
+- JP4: U3 (LMR36520) PG to ~ESP_RESET aka EN -- allows the LMR36520 to hold the ESP32 in "reset" state until the power from the buck converter has stabilized. **Do not connect if powering from USB.**
+- JP5: VCC selection -- connects VCC to buck converter output or directly to barrel connector (J2)
+- JP6: Auto-reset to ESP32 EN (allows the FT232 to reset ESP32)
+- JP7: Auto-reset to ESP32 GPIO0 (allows the FT232 to invoke the ESP32's bootloader as required)
+- JP8: Nextion power switch (U4) bypass
+- JP9: TMP117 Alert to GPI36
+- JP10: TMP117 A0 (*See the note below.)
+- JP11: BME680 A0 (*See the note below.)
+- JP12: BME280 A0 (*See the note below.)
+
+*Note: This jumper is shorted to `0` by default; if you wish to modify it, use a razor knife to cut the trace between the center and `0` pads on the board and then create a solder bridge between the center pad and the `1` pad. Use your DMM to confirm proper/expected conductivity!
 
 After you're done assembling but **before powering it on for the first time**, always check for shorts -- particularly across power tracks. I use my DMM to measure between ground, the 3.3 volt and 5 volt rails to be sure they are not shorted together. If any of them are, you'll need to carefully check your soldering work and look for solder bridges. If there are no shorts, it's probably safe to power it on and load the firmware image onto the ESP32.
 
 #### One More Thing!
 
-There is a header labeled `J2` near the lower left on the back of the PCB. This header must be fitted with a jumper to select where the board should draw power from. There are four options: one of three possible AC circuits (`RC`/`C`, `RH`/`C`, or `RMISC`/`C`) as well as `J1` which is the barrel jack. In the event that your HVAC system does not have separate/individual `RC` and/or `RH` wires, it is possible to jumper them together by placing jumpers on _both_ `RC` _and_ `RH`. This effectively turns them into a single `R` terminal. `RMISC` may also be added into this mix, as needed. This may be done if only a single `R` wire is available/connected.
+There is a header labeled `POWER SEL` (either `J2` or `J3`) to the lower left of the PCB. This header **must** be fitted with a jumper to select where the board should draw power from. There are up to four options: one of three possible AC circuits (`RC`/`C`, `RH`/`C`, or `RMISC`/`C`) as well as the barrel jack (`J1` or `J2`). In the event that your HVAC system does not have separate/individual `RC` and/or `RH` wires, it is possible to jumper them together by placing jumpers on _both_ `RC` _and_ `RH`. This effectively turns them into a single `R` terminal. `RMISC` may also be added into this mix, as needed. This may be done if only a single `R` wire is available/connected.
 
-Note that the barrel jack may be an AC or DC source and it is not polarity sensitive because of D1. It must provide a minimum of 7.5 volts and a maximum of 40 volts DC or 30 volts AC (because RMS, yada yada). A common 12-volt DC power brick will likely work best if the board is to be powered this way. Depending on exactly how it is built and the input voltage, its current requirement will vary. Even with a low input voltage (say, nine volts or so) it shouldn't need more than about half of an amp (500 mA) unless you've attached some extra hardware (sensors, LEDs, etc.). Even so, keep in mind that a higher voltage source will mean a lower current draw because of the buck converter. The rating of the polyfuse `F1` should ideally be adjusted accordingly.
+Note that on all except the Nextion 3.5" board the barrel jack may be an AC or DC source and it is not polarity sensitive because of the bridge rectifier. It must provide a minimum of 7.5 volts and a maximum of 40 volts DC or 30 volts AC (because RMS, yada yada). A common 12-volt DC power brick will likely work best if the board is to be powered this way. Depending on the input voltage and connected peripherals/accessories, its current requirement will vary. Even with a low input voltage (say, nine volts or so) it shouldn't need more than about 250 mA unless you've attached some extra hardware (sensors, LEDs, etc.) -- keep in mind, however, that the Nextion versions are slightly more power-hungry, depending on the display size. Even so, because of the buck converter, a higher voltage source will mean a lower current draw. Ideally the rating of the polyfuse `F1` should be adjusted accordingly, although the specified value should be suitable for most situations.
+
+**Note that if, on the Nextion 3.5" board, `JP5` is set to bypass the buck converter, _only_ a 5-volt DC source may be used!**
 
 For safety reasons, do not connect more than one power source at a time.
 
 ### Initial Firmware Flashing
 
-To invoke the ESP32's bootloader, hold down the "Mode" pushbutton (which is connected to the ESP32's GPIO 0 pin) as you either power it on or tap the adjacent reset button, then release the "Mode" button. With the bootloader invoked, you can use J4 (labeled "SERIAL") to connect your serial adapter and flash the ESP32. There are plenty of guides on flashing ESP32s out on the web, so I'm not going to reinvent the wheel here. If you are having difficulty doing so, however, use your DMM and check for shorts across the transmit (TX) and receive (RX) lines. It's possible one or the other is shorted to ground, Vcc, or another adjacent track. In some cases, it may be necessary to hold down the encoder button (connected to GPIO 2) _as well as_ the "Mode" button (GPIO 0) to properly invoke the bootloader -- try this first if you're having any trouble.
+After confirming that your new boards are electrically safe to power on (you checked everything as I suggested above, right?!), the ESP32 needs to have [ESPHome](https://esphome.io) installed ("flashed") onto it.
 
-With the firmware flashed onto the ESP32, you're ready to begin using your Climate and Sprinkler Controller(s)! If you made it this far, nice work!
+You'll need to either build an ESPHome configuration of your own or [start with mine](https://github.com/kbx81/esphome-configs/blob/master/CSC.md) and tweak them to your liking.
+
+The Nextion versions of the boards have an FT232 USB-to-serial IC on the board; I definitely recommended using this for installing the firmware. Bridge both of the "Auto-reset" jumpers on these boards for the best experience.
+
+If you're not using one of the Nextion versions of the boards or you did not place the FT232, you'll need to manually invoke the ESP32's bootloader to enable flashing. Hold down the "Mode" pushbutton (which is connected to the ESP32's GPIO 0 pin) as you either power it on or tap the adjacent reset button, then release the "Mode" button. With the bootloader invoked, you can use the pin header labeled "SERIAL" (`J4` or `J5`) to connect your serial adapter and flash the ESP32. There are plenty of guides on flashing ESP32s out on the web, so I'm not going to reinvent the wheel here. If you are having difficulty doing so, however, use your DMM and check for shorts across the transmit (TX) and receive (RX) lines. It's possible one or the other is shorted to ground, Vcc, or another adjacent pin or track. In some cases, it may be necessary to hold down the encoder button (connected to GPIO 2) _as well as_ the "Mode" button (GPIO 0) to properly invoke the bootloader -- try this first if you're having any trouble.
+
+Once you've installed the firmware onto the ESP32, you're ready to begin using your Climate and Sprinkler Controller(s)! If you made it this far, nice work!
 
 ## Installation and Usage
 
-Installing the controller is pretty straight forward -- the terminal strips are labeled just like a typical thermostat. _Power off your HVAC system before (dis)connecting anything!_ Connect the wires as you would any other thermostat and you should be ready to go. The [esp_thermostat_nook.yaml](ESPHome/esp_thermostat_nook.yaml) configuration in the [ESPHome](https://esphome.io) [directory](ESPHome/) of this repository aims to function just like a "real thermostat". (The others are aimed at being `satellite` units used to enhance control of the system.)
+Physically installing the controller is pretty straight forward -- the terminal strips are labeled just like a typical thermostat. _Power off your HVAC system before (dis)connecting anything!_ Connect the wires as you would any other thermostat and you should be ready to go. The [ESPHome](https://esphome.io) [configurations](https://github.com/kbx81/esphome-configs/blob/master/CSC.md) I've created aim to function just like a "real thermostat".
 
-Once all the little wires are connected, turn your HVAC system's power back on and your new controller should start up. If you are using the [esp_thermostat_nook.yaml](ESPHome/esp_thermostat_nook.yaml) configuration from this repository, pressing the encoder button down will cycle through the various screens/pages of the thermostat. Rotating the encoder changes the highlighted value (when present). I recommend clicking through the various screens to familiarize yourself with them prior to testing.
+Once all the little wires are connected, turn your HVAC system's power back on and your new controller should start up. Please see [this document](https://github.com/kbx81/esphome-configs/blob/master/CSC.md#thermostat-user-interface-ui) for an explanation of the device's user-interface (UI).
 
 To test the thermostat:
 
 - If your system supports heating, set the thermostat mode to either `Auto` or `Heat` mode and turn the temperature up to a value at least one degree above the currently displayed room/air temperature. Heating should commence.
 - If your system supports cooling, set the thermostat mode to either `Auto` or `Cool` mode and turn the temperature down to a value at least one degree below the currently displayed room/air temperature. Cooling should commence.
 
-**Important note:** the [ESPHome](https://esphome.io) [configurations](ESPHome/) I've provided have timers built into them that deliberately prevent the physical outputs (TRIACs, in this case) from changing states too quickly. For example, AC compressors are sensitive to being switched on/off too quickly (this is called "short cycling"). Because of this, you may find that cooling/heating will not stop despite that the temperature has been reset to a value that triggers the "idle" state/behavior. The display (and HA) will reflect this, but the outputs won't. Don't worry -- once the timer expires, the respective output will switch off, as expected. Note that these delays may be modified by changing the configuration to your liking -- just be careful, as making them too short will shorten the life of or even damage your system!
+### Important Note!
+
+The [ESPHome](https://esphome.io) [configurations](https://github.com/kbx81/esphome-configs/blob/master/CSC.md) I've created use the [thermostat's](https://esphome.io/components/climate/thermostat.html) delay timers to prevent the physical outputs (TRIACs, in this case) from changing states too quickly. For example, AC compressors are sensitive to being switched on/off rapidly (this is called "short cycling"). Because of this, you may find that cooling/heating will not stop despite that the temperature has been reset to a value that triggers the "idle" state/behavior. The display (and HA) will reflect this, but the outputs won't. Don't worry -- once the timer expires, the respective output will switch off, as expected. Note that these delays may be modified by changing the configuration to your liking -- just be careful, as making them too short will shorten the life of or even damage your system!
 
 If all this works, you have a new thermostat! Nice work!
 

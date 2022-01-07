@@ -1,6 +1,7 @@
 # kbx's Climate and Sprinkler Controller
 
-![Climate and Sprinkler Controller](images/front-small.jpg "Climate and Sprinkler Controller")
+![Climate and Sprinkler Controller](images/Nextion/front-small.jpg "Climate and Sprinkler Controller - Nextion 7\"")
+![Climate and Sprinkler Controller](images/OLED/front-small.jpg "Climate and Sprinkler Controller - OLED")
 
 This document outlines some of the thoughts I had that went into the design of this device.
 
@@ -42,33 +43,39 @@ The ideas I had are probably best expressed as a list of requirements. That's wh
 ## The Solution
 
 As I tend to do, I designed and built something that's arguably a bit overkill. It meets all of the design goals I listed above and then some. The result is:
- - An ESP32-WROOM-32 (v2) or ESP32-WROVER-32 (v3) module as the "brain" with an MCP23017 I/O expander
- - 11 control channels -- eight opto-isolated TRIAC-based switches and three SPDT relays
+ - An ESP32-WROOM-32 (v2) or ESP32-WROVER-32 (v3 and Nextion versions) module as the "brain" with an MCP23017 (I2C) I/O expander for switching the...
+ - Up to 11 control channels -- up to eight opto-isolated TRIAC-based switches and up to three SPDT relays
  - Indicator LEDs for all on-board control channels
- - Connectors for two different (Adafruit) OLED displays
- - An encoder with a button for local control
- - Support (footprints) for up to six different temperature sensors:
-   - BME280 or BME680
+ - Display support:
+   - v2/v3: Connectors for two different (Adafruit) OLED displays, or...
+   - Nextion: A dedicated serial header
+ - Local conotrol:
+   - v2/v3: An encoder with a button
+   - Nextion: these are touchscreens!
+ - Support (footprints) for up to eight different sensors (you don't need them all!):
+   - BME280
+   - BME680 (Nextion versions only)
    - SHTC3
    - TMP117
    - DHT22
    - Up to two thermistors (internal/external)
+   - SGP40 (WROVER/v3 and Nextion versions only)
  - The ability to draw power from one of three available AC circuits (RH/C, RC/C, or RMISC/C) or from an on-board barrel jack that supports both AC and DC
- - Ports that break out all I/O capability, including serial, I2C, SPI, encoder, and the on-board I/O expander
+ - Ports that break out all I/O capability, including serial, I2C, SPI, encoder (v2/v3), and the on-board I/O expander
 
-As a home automation enthusiast, I'm already using [Home Assistant](https://www.home-assistant.io) and as an electronics hobbyist, I was already using [ESPHome](https://esphome.io); it seemed a logical solution for this device and, as such, I designed it with [ESPHome](https://esphome.io) in mind, although it should work just fine with any other app that will run on the ESP32.
+As a home automation enthusiast, I'm already using [Home Assistant](https://www.home-assistant.io) and as an electronics hobbyist, I was already using [ESPHome](https://esphome.io); it seemed a logical solution for this device and, as such, I designed it with [ESPHome](https://esphome.io) in mind. Still, I expect it will work just fine with any code that will run on the ESP32.
 
 ## The Journey
 
 There aren't many hardware projects I do that do _not_ involve me writing at least some software -- this one was no exception. Prior to this, I was a more casual [ESPHome](https://esphome.io) user; I'd set up a device to control some LED lights in my 3-D printer's enclosure as well as another device as an IR blaster (see the [kbxIRBlaster](https://github.com/kbx81/kbxIRBlaster)) for my home AV system. This idea came to me and I began experimenting with some hardware on a breadboard. It was easy to get going, although I realized that some of the existing [ESPHome](https://esphome.io) components would need some tweaking to really get it to work to my liking.
 
-Long story short, this led to me submitting a number of PRs to the [ESPHome](https://esphome.io) project. This is the first open source project I've contributed to! (Although I'm no stranger to GitHub -- I regularly use it at my day job.) With the help of several kind folks on the [ESPHome](https://esphome.io) Discord server, my PRs eventually got merged into their `dev` branch and are now available in the latest (1.15) release! I more or less rewrote the `bang-bang` component, although, after some discussion, we decided to make this a new component, which is cleverly named `thermostat`. I added support for two new displays and, as a part of one of them, also played a large part in adding color (and grayscale) support to the platform. With these changes, I was able to create a wonderful little device that should keep my place (and yours!) comfy for a long time to come.
+Long story short, this led to me submitting a number of PRs to the [ESPHome](https://esphome.io) project. This is the first open source project I've contributed to! (Although I'm no stranger to GitHub -- I regularly use it at my day job.) With the help of several kind folks on the [ESPHome](https://esphome.io) Discord server, my PRs eventually got merged into their `dev` branch and are now generally available! I more or less rewrote the `bang-bang` component, although, after some discussion, we decided to make this a new component, which is cleverly named `thermostat`. I added support for two new displays and, as a part of one of them, also played a large part in adding color (and grayscale) support to the platform. With these changes, I was able to create a wonderful little device that should keep my place (and yours!) comfy for a long time to come.
 
 ## The Aftermath
 
 Of course, just designing and building a controller such as this isn't enough. After you finish it, you have to do something with it. Why not _actually use it_? That's what it's for, right? ...Right?
 
-That was kind of the whole point of this -- to make something to replace what I had. And, as it turns out, it is a great solution. For one, temperature data is much higher resolution, both in terms of reported temperature and time. While not terribly useful, a resolution of (about) one-tenth of a degree F makes charts much more interesting, as you can see how (small) actions (turning on the TV and a couple lamps, or taking a shower, for example) quickly begin to affect the temperature and humidity.
+That was kind of the whole point of this -- to make something better to replace what I had. And, as it turns out, it is a great solution. For one, temperature data is much higher resolution, both in terms of reported temperature and time. While not terribly useful, a resolution of (about) one-tenth of a degree F makes charts much more interesting, as you can see how (small) actions (turning on the TV and a couple lamps, or taking a shower, for example) quickly begin to affect the temperature and humidity.
 
 I set up three of them -- one physically connected (with wires!) to the HVAC system and two satellite units (more on this [here](HARDWARE.md)). One satellite resides in the bedroom while the other is in the living room. I built automations that keep them all in sync so that a change on one of them is reflected on all of them (since it's really just a single heating system). The sensor data is averaged among them and the average is used to control the system. It is a great setup and it works beautifully!
 
@@ -78,9 +85,9 @@ Please see the [build guide](HARDWARE.md) for specific detail regarding the hard
 
 ## Closing Thoughts
 
-At the time I'm writing this, I've been using these devices for about a month and have found them to be very reliable -- _significantly_ more so than what I was using before. The sensors are very accurate and provide a high-resolution picture of the climate/environment. They offer a lot of flexibility and can be built-to-order. They are very hackable and anyone familiar with ESP devices should be able to pick one up and run with it. You can extend them by plugging extra hardware into the break-outs along the edges of the boards. I really hope others will find them useful and have fun with them!
+At the time I'm writing this, I've been using these devices for over a year and have found them to be very reliable -- significantly more so than what I was using before. The sensors are very accurate and provide a high-resolution picture of the climate/environment. They offer a lot of flexibility and can be built-to-order. They are very hackable and anyone familiar with ESP devices should be able to pick one up and run with it. You can extend them by plugging extra hardware into the break-outs along the edges of the boards. I really hope others will find them useful and have fun with them!
 
-Some folks may be concerned about reliability. In my experience, this is simply not an issue, both with respect to this device itself as well as Home Assistant and ESPHome. Home Assistant and ESPHome are quite stable at this point and, if that isn't your experience, I might suggest looking more closely at your hardware setup and/or how you are managing it. A little troubleshooting and/or optimizing can go a long way. I've been using these platforms for over a year at this point (in two houses!) and I have had _zero_ unexpected crashes. Now, _I have broken it_, but it has always been because of something I did and, as such, I was fully aware of it and easily recovered. Occasionally I'll stumble across an update that brings about a breaking change -- so I search the release notes for anything related to the device(s) that broke, I adjust my config as needed and move on. I've got over a hundred connected devices and a plethora of automations at each location so _it gets used_. When the software is set up correctly and the hardware is built well, it should be as reliable as the old mechanical light switch you used to use before you installed that smart one. ;)
+Some folks may be concerned about reliability. In my experience, this is simply not an issue, both with respect to this device itself as well as Home Assistant and ESPHome. Home Assistant and ESPHome are quite stable at this point and, if that isn't your experience, I might suggest looking more closely at your hardware setup and/or how you are managing it. A little troubleshooting and/or optimizing can go a long way. I've been using these platforms for over two years at this point (in two houses!) and I have had zero unexpected crashes. Now, _I have broken it_, but it has always been because of something I did and, as such, I was fully aware of it and easily recovered. Occasionally I'll stumble across an update that brings about a breaking change -- so I search the release notes for anything related to the device(s) that broke, I adjust my config as needed and move on. Breaking changes are an opportunity to learn and improve. I've got over a hundred connected devices and a plethora of automations at each location so _it all gets used_. When the software is set up correctly and the hardware is built well, it should be as reliable as the old mechanical light switch you used to use before you installed that smart one. ;)
 
 Thank you for sticking around!
 

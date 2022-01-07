@@ -2,8 +2,8 @@
 <export version="D">
   <design>
     <source>/Users/kburzinski/Development/Hardware/ClimateSprinklerController/WROVER-Nextion7/ClimateSprinklerController.sch</source>
-    <date>Sunday, January 24, 2021 at 11:13:42 PM</date>
-    <tool>Eeschema (5.1.8-0-10_14)</tool>
+    <date>Thursday, March 25, 2021 at 12:06:17 AM</date>
+    <tool>Eeschema (5.1.9-0-10_14)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Climate and Sprinkler Controller</title>
@@ -20,11 +20,11 @@
   </design>
   <components>
     <comp ref="U15">
-      <value>MOC3043</value>
+      <value>MOC3043SM</value>
       <footprint>Package_DIP:SMDIP-6_W9.53mm</footprint>
       <datasheet>http://www.fairchildsemi.com/ds/MO/MOC3031M.pdf</datasheet>
       <fields>
-        <field name="Part">MOC3043SM</field>
+        <field name="MPN1">MOC3043SM</field>
       </fields>
       <libsource lib="Relay_SolidState" part="MOC3043M" description="Zero Cross Opto-Triac, Vdrm 400V, Ift 5mA, DIP6"/>
       <sheetpath names="/" tstamps="/"/>
@@ -35,7 +35,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">ERJ-P06J390V</field>
+        <field name="MPN1">ERJ-P06J390V</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -46,7 +46,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">CC0805KRX7R9BB103</field>
+        <field name="MPN1">CC0805KRX7R9BB103</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -57,7 +57,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE07180RL</field>
+        <field name="MPN1">RT0805FRE07180RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -68,18 +68,18 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE07820RL</field>
+        <field name="MPN1">RT0805FRE07820RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5EA36EE0</tstamp>
     </comp>
     <comp ref="U16">
-      <value>MOC3043</value>
+      <value>MOC3043SM</value>
       <footprint>Package_DIP:SMDIP-6_W9.53mm</footprint>
       <datasheet>http://www.fairchildsemi.com/ds/MO/MOC3031M.pdf</datasheet>
       <fields>
-        <field name="Part">MOC3043SM</field>
+        <field name="MPN1">MOC3043SM</field>
       </fields>
       <libsource lib="Relay_SolidState" part="MOC3043M" description="Zero Cross Opto-Triac, Vdrm 400V, Ift 5mA, DIP6"/>
       <sheetpath names="/" tstamps="/"/>
@@ -90,7 +90,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">ERJ-P06J390V</field>
+        <field name="MPN1">ERJ-P06J390V</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -101,7 +101,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">CC0805KRX7R9BB103</field>
+        <field name="MPN1">CC0805KRX7R9BB103</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -112,7 +112,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE07180RL</field>
+        <field name="MPN1">RT0805FRE07180RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -123,18 +123,18 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE07820RL</field>
+        <field name="MPN1">RT0805FRE07820RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5EA60B75</tstamp>
     </comp>
     <comp ref="U17">
-      <value>MOC3043</value>
+      <value>MOC3043SM</value>
       <footprint>Package_DIP:SMDIP-6_W9.53mm</footprint>
       <datasheet>http://www.fairchildsemi.com/ds/MO/MOC3031M.pdf</datasheet>
       <fields>
-        <field name="Part">MOC3043SM</field>
+        <field name="MPN1">MOC3043SM</field>
       </fields>
       <libsource lib="Relay_SolidState" part="MOC3043M" description="Zero Cross Opto-Triac, Vdrm 400V, Ift 5mA, DIP6"/>
       <sheetpath names="/" tstamps="/"/>
@@ -145,7 +145,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">ERJ-P06J390V</field>
+        <field name="MPN1">ERJ-P06J390V</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -156,7 +156,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">CC0805KRX7R9BB103</field>
+        <field name="MPN1">CC0805KRX7R9BB103</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -167,18 +167,18 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE07180RL</field>
+        <field name="MPN1">RT0805FRE07180RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5EA7000A</tstamp>
     </comp>
     <comp ref="U18">
-      <value>MOC3043</value>
+      <value>MOC3043SM</value>
       <footprint>Package_DIP:SMDIP-6_W9.53mm</footprint>
       <datasheet>http://www.fairchildsemi.com/ds/MO/MOC3031M.pdf</datasheet>
       <fields>
-        <field name="Part">MOC3043SM</field>
+        <field name="MPN1">MOC3043SM</field>
       </fields>
       <libsource lib="Relay_SolidState" part="MOC3043M" description="Zero Cross Opto-Triac, Vdrm 400V, Ift 5mA, DIP6"/>
       <sheetpath names="/" tstamps="/"/>
@@ -189,7 +189,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">ERJ-P06J390V</field>
+        <field name="MPN1">ERJ-P06J390V</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -200,7 +200,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">CC0805KRX7R9BB103</field>
+        <field name="MPN1">CC0805KRX7R9BB103</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -211,18 +211,18 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE07180RL</field>
+        <field name="MPN1">RT0805FRE07180RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5EA70067</tstamp>
     </comp>
     <comp ref="U13">
-      <value>MOC3043</value>
+      <value>MOC3043SM</value>
       <footprint>Package_DIP:SMDIP-6_W9.53mm</footprint>
       <datasheet>http://www.fairchildsemi.com/ds/MO/MOC3031M.pdf</datasheet>
       <fields>
-        <field name="Part">MOC3043SM</field>
+        <field name="MPN1">MOC3043SM</field>
       </fields>
       <libsource lib="Relay_SolidState" part="MOC3043M" description="Zero Cross Opto-Triac, Vdrm 400V, Ift 5mA, DIP6"/>
       <sheetpath names="/" tstamps="/"/>
@@ -233,7 +233,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">ERJ-P06J390V</field>
+        <field name="MPN1">ERJ-P06J390V</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -244,7 +244,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">CC0805KRX7R9BB103</field>
+        <field name="MPN1">CC0805KRX7R9BB103</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -255,7 +255,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE07180RL</field>
+        <field name="MPN1">RT0805FRE07180RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -266,18 +266,18 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE07820RL</field>
+        <field name="MPN1">RT0805FRE07820RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5EA8D560</tstamp>
     </comp>
     <comp ref="U14">
-      <value>MOC3043</value>
+      <value>MOC3043SM</value>
       <footprint>Package_DIP:SMDIP-6_W9.53mm</footprint>
       <datasheet>http://www.fairchildsemi.com/ds/MO/MOC3031M.pdf</datasheet>
       <fields>
-        <field name="Part">MOC3043SM</field>
+        <field name="MPN1">MOC3043SM</field>
       </fields>
       <libsource lib="Relay_SolidState" part="MOC3043M" description="Zero Cross Opto-Triac, Vdrm 400V, Ift 5mA, DIP6"/>
       <sheetpath names="/" tstamps="/"/>
@@ -288,7 +288,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">ERJ-P06J390V</field>
+        <field name="MPN1">ERJ-P06J390V</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -299,7 +299,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">CC0805KRX7R9BB103</field>
+        <field name="MPN1">CC0805KRX7R9BB103</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -310,7 +310,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE07180RL</field>
+        <field name="MPN1">RT0805FRE07180RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -321,18 +321,18 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE07820RL</field>
+        <field name="MPN1">RT0805FRE07820RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5EA8D5BD</tstamp>
     </comp>
     <comp ref="U12">
-      <value>MOC3043</value>
+      <value>MOC3043SM</value>
       <footprint>Package_DIP:SMDIP-6_W9.53mm</footprint>
       <datasheet>http://www.fairchildsemi.com/ds/MO/MOC3031M.pdf</datasheet>
       <fields>
-        <field name="Part">MOC3043SM</field>
+        <field name="MPN1">MOC3043SM</field>
       </fields>
       <libsource lib="Relay_SolidState" part="MOC3043M" description="Zero Cross Opto-Triac, Vdrm 400V, Ift 5mA, DIP6"/>
       <sheetpath names="/" tstamps="/"/>
@@ -343,7 +343,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">ERJ-P06J390V</field>
+        <field name="MPN1">ERJ-P06J390V</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -354,7 +354,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">CC0805KRX7R9BB103</field>
+        <field name="MPN1">CC0805KRX7R9BB103</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -365,7 +365,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE07180RL</field>
+        <field name="MPN1">RT0805FRE07180RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -376,18 +376,18 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE07820RL</field>
+        <field name="MPN1">RT0805FRE07820RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5EA8D61A</tstamp>
     </comp>
     <comp ref="U19">
-      <value>MOC3043</value>
+      <value>MOC3043SM</value>
       <footprint>Package_DIP:SMDIP-6_W9.53mm</footprint>
       <datasheet>http://www.fairchildsemi.com/ds/MO/MOC3031M.pdf</datasheet>
       <fields>
-        <field name="Part">MOC3043SM</field>
+        <field name="MPN1">MOC3043SM</field>
       </fields>
       <libsource lib="Relay_SolidState" part="MOC3043M" description="Zero Cross Opto-Triac, Vdrm 400V, Ift 5mA, DIP6"/>
       <sheetpath names="/" tstamps="/"/>
@@ -398,7 +398,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">ERJ-P06J390V</field>
+        <field name="MPN1">ERJ-P06J390V</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -409,7 +409,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">CC0805KRX7R9BB103</field>
+        <field name="MPN1">CC0805KRX7R9BB103</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -420,7 +420,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE07270RL</field>
+        <field name="MPN1">RT0805FRE07270RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -431,7 +431,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE07270RL</field>
+        <field name="MPN1">RT0805FRE07270RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -442,7 +442,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE07270RL</field>
+        <field name="MPN1">RT0805FRE07270RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -453,7 +453,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE07270RL</field>
+        <field name="MPN1">RT0805FRE07270RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -464,7 +464,7 @@
       <footprint>Connector_BarrelJack:BarrelJack_Horizontal</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">694106301002</field>
+        <field name="MPN1">694106301002</field>
       </fields>
       <libsource lib="Connector" part="Barrel_Jack_Switch" description="DC Barrel Jack with an internal switch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -475,7 +475,7 @@
       <footprint>LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">APTL3216QBC/D</field>
+        <field name="MPN1">APTL3216QBC/D</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
@@ -486,7 +486,7 @@
       <footprint>LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">APTL3216QBC/D</field>
+        <field name="MPN1">APTL3216QBC/D</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
@@ -497,7 +497,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE07270RL</field>
+        <field name="MPN1">RT0805FRE07270RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -508,7 +508,7 @@
       <footprint>LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">APTL3216SURCK</field>
+        <field name="MPN1">APTL3216SURCK</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
@@ -519,7 +519,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE07270RL</field>
+        <field name="MPN1">RT0805FRE07270RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -530,7 +530,7 @@
       <footprint>LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">APTL3216SURCK</field>
+        <field name="MPN1">APTL3216SURCK</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
@@ -541,7 +541,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE07270RL</field>
+        <field name="MPN1">RT0805FRE07270RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -552,7 +552,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE07270RL</field>
+        <field name="MPN1">RT0805FRE07270RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -563,7 +563,7 @@
       <footprint>LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">APTL3216SYCK</field>
+        <field name="MPN1">APTL3216SYCK</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
@@ -574,7 +574,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RC0805FR-0710KL</field>
+        <field name="MPN1">RC0805FR-0710KL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -585,7 +585,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RC0805FR-0710KL</field>
+        <field name="MPN1">RC0805FR-0710KL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -596,7 +596,7 @@
       <footprint>Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx58-2LFS</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">PTS645VK582LFS</field>
+        <field name="MPN1">PTS645VK582LFS</field>
       </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <sheetpath names="/" tstamps="/"/>
@@ -607,18 +607,18 @@
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf</datasheet>
       <fields>
-        <field name="Part">2N7002</field>
+        <field name="MPN1">2N7002</field>
       </fields>
       <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>606A3FFA</tstamp>
     </comp>
     <comp ref="D9">
-      <value>1N4148</value>
+      <value>N/A</value>
       <footprint>Diode_SMD:D_SOD-123</footprint>
       <datasheet>https://www.vishay.com/docs/85748/1n4148w.pdf</datasheet>
       <fields>
-        <field name="Part">1N4148W</field>
+        <field name="MPN1">1N4148W</field>
       </fields>
       <libsource lib="Diode" part="1N4148W" description="75V 0.15A Fast Switching Diode, SOD-123"/>
       <sheetpath names="/" tstamps="/"/>
@@ -629,18 +629,18 @@
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf</datasheet>
       <fields>
-        <field name="Part">2N7002</field>
+        <field name="MPN1">2N7002</field>
       </fields>
       <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>607C600D</tstamp>
     </comp>
     <comp ref="D11">
-      <value>1N4148</value>
+      <value>N/A</value>
       <footprint>Diode_SMD:D_SOD-123</footprint>
       <datasheet>https://www.vishay.com/docs/85748/1n4148w.pdf</datasheet>
       <fields>
-        <field name="Part">1N4148W</field>
+        <field name="MPN1">1N4148W</field>
       </fields>
       <libsource lib="Diode" part="1N4148W" description="75V 0.15A Fast Switching Diode, SOD-123"/>
       <sheetpath names="/" tstamps="/"/>
@@ -651,18 +651,18 @@
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf</datasheet>
       <fields>
-        <field name="Part">2N7002</field>
+        <field name="MPN1">2N7002</field>
       </fields>
       <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>607FAF7C</tstamp>
     </comp>
     <comp ref="D13">
-      <value>1N4148</value>
+      <value>N/A</value>
       <footprint>Diode_SMD:D_SOD-123</footprint>
       <datasheet>https://www.vishay.com/docs/85748/1n4148w.pdf</datasheet>
       <fields>
-        <field name="Part">1N4148W</field>
+        <field name="MPN1">1N4148W</field>
       </fields>
       <libsource lib="Diode" part="1N4148W" description="75V 0.15A Fast Switching Diode, SOD-123"/>
       <sheetpath names="/" tstamps="/"/>
@@ -673,29 +673,29 @@
       <footprint>LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">APTL3216CGCK</field>
+        <field name="MPN1">APTL3216CGCK</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6241610D</tstamp>
     </comp>
     <comp ref="R29">
-      <value>1K2</value>
+      <value>560</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE071K2L</field>
+        <field name="MPN1">RT0805FRE07560RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>62418237</tstamp>
     </comp>
     <comp ref="R30">
-      <value>1K2</value>
+      <value>560</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE071K2L</field>
+        <field name="MPN1">RT0805FRE07560RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -706,7 +706,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">CC0805KRX7R7BB104</field>
+        <field name="MPN1">CC0805KRX7R7BB104</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -717,18 +717,18 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RC0805FR-0710KL</field>
+        <field name="MPN1">RC0805FR-0710KL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5EF12905</tstamp>
     </comp>
     <comp ref="U2">
-      <value>MCP23017_SO</value>
+      <value>MCP23017-E/SO</value>
       <footprint>Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm</footprint>
       <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf</datasheet>
       <fields>
-        <field name="Part">MCP23017-E/SO</field>
+        <field name="MPN1">MCP23017-E/SO</field>
       </fields>
       <libsource lib="Interface_Expansion" part="MCP23017_SO" description="16-bit I/O expander, I2C, interrupts, w pull-ups, SOIC-28"/>
       <sheetpath names="/" tstamps="/"/>
@@ -739,7 +739,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RC0805FR-0710KL</field>
+        <field name="MPN1">RC0805FR-0710KL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -750,7 +750,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">CC0805KRX7R7BB104</field>
+        <field name="MPN1">CC0805KRX7R7BB104</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -761,7 +761,7 @@
       <footprint>Package_DFN_QFN:AMS_QFN-4-1EP_2x2mm_P0.95mm_EP0.7x1.6mm</footprint>
       <datasheet>https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/0_Datasheets/Humidity/Sensirion_Humidity_Sensors_SHT1x_Datasheet.pdf</datasheet>
       <fields>
-        <field name="Part">SHTC3</field>
+        <field name="MPN1">SHTC3</field>
       </fields>
       <libsource lib="Sensor_Humidity" part="SHTC3" description="Humidity and Temperature Sensor, +/-2%RH, +/-0.2degC, I2C, 1.62-3.6V, DFN-4"/>
       <sheetpath names="/" tstamps="/"/>
@@ -772,7 +772,7 @@
       <footprint>Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical</footprint>
       <datasheet>http://akizukidenshi.com/download/ds/aosong/DHT11.pdf</datasheet>
       <fields>
-        <field name="Part">DHT22</field>
+        <field name="MPN1">DHT22</field>
       </fields>
       <libsource lib="Sensor" part="DHT11" description="Temperature and humidity module"/>
       <sheetpath names="/" tstamps="/"/>
@@ -782,6 +782,10 @@
       <value>MountingHole_Pad</value>
       <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5EA9EED7</tstamp>
@@ -790,6 +794,10 @@
       <value>MountingHole_Pad</value>
       <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5EA9EEC2</tstamp>
@@ -798,6 +806,10 @@
       <value>MountingHole_Pad</value>
       <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5EA64EB5</tstamp>
@@ -806,6 +818,10 @@
       <value>MountingHole_Pad</value>
       <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5EA64EA8</tstamp>
@@ -814,6 +830,10 @@
       <value>MountingHole_Pad</value>
       <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5EA64E9B</tstamp>
@@ -823,7 +843,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">CC0805KRX7R7BB104</field>
+        <field name="MPN1">CC0805KRX7R7BB104</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -834,29 +854,29 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">C0805C105K4RACTU</field>
+        <field name="MPN1">C0805C105K4RACTU</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5EC9A924</tstamp>
     </comp>
     <comp ref="D2">
-      <value>CD-MBL206SL</value>
+      <value>N/A</value>
       <footprint>Diode_SMD:Diode_Bridge_Bourns_CD-MBL2xxS</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">CD-MBL206SL</field>
+        <field name="MPN1">CD-MBL206SL</field>
       </fields>
       <libsource lib="Device" part="D_Bridge_+AA-" description="Diode bridge, +ve/AC/AC/-ve"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5EBC823C</tstamp>
     </comp>
     <comp ref="U5">
-      <value>LMR36520</value>
+      <value>LMR36520ADDAR</value>
       <footprint>Package_SO:Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm_ThermalVias</footprint>
       <datasheet>https://www.ti.com/lit/ds/symlink/lmr36520.pdf</datasheet>
       <fields>
-        <field name="Part">LMR36520ADDAR</field>
+        <field name="MPN1">LMR36520ADDAR</field>
       </fields>
       <libsource lib="Regulator_Switching" part="LMR33630ADDA" description="Simple Switcher Synchronous Buck Regulator, Vin=3.8-36V, Iout=3A, F=400kHz, Adjustable output voltage, HSOP-8"/>
       <sheetpath names="/" tstamps="/"/>
@@ -867,7 +887,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">C2012X5R1H224K125AA</field>
+        <field name="MPN1">C2012X5R1H224K125AA</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -878,8 +898,8 @@
       <footprint>Inductor_SMD:L_Wuerth_WE-PD-Typ-LS</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">7447709150</field>
-        <field name="PartAlt">MSS1210-153MEB</field>
+        <field name="MPN1">7447709150</field>
+        <field name="MPN2">MSS1210-153MEB</field>
       </fields>
       <libsource lib="Device" part="L" description="Inductor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -890,7 +910,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RC0805FR-07100KL</field>
+        <field name="MPN1">RC0805FR-07100KL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -901,7 +921,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE0724K9L</field>
+        <field name="MPN1">RT0805FRE0724K9L</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -912,7 +932,7 @@
       <footprint>ClimateSprinklerController:PhoenixContact_SPTAF_1_12-3.5-IL_1x12_P3.50mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">1862039</field>
+        <field name="MPN1">1862039</field>
       </fields>
       <libsource lib="Connector" part="Screw_Terminal_01x12" description="Generic screw terminal, single row, 01x12, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
@@ -923,7 +943,7 @@
       <footprint>LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">APTL3216SECK</field>
+        <field name="MPN1">APTL3216SECK</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
@@ -934,7 +954,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE07120RL</field>
+        <field name="MPN1">RT0805FRE07120RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -945,7 +965,7 @@
       <footprint>Capacitor_SMD:CP_Elec_5x5.8</footprint>
       <datasheet>https://www.cde.com/resources/catalogs/AFK.pdf</datasheet>
       <fields>
-        <field name="Part">EEE-HP0J100R</field>
+        <field name="MPN1">EEE-HP0J100R</field>
       </fields>
       <libsource lib="Device" part="CP" description="Polarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -956,7 +976,7 @@
       <footprint>LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">597-6901-607F</field>
+        <field name="MPN1">597-6901-607F</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
@@ -967,7 +987,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE071K6L</field>
+        <field name="MPN1">RT0805FRE071K6L</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -978,7 +998,7 @@
       <footprint>Package_TO_SOT_SMD:TO-252-2</footprint>
       <datasheet>https://www.st.com/resource/en/datasheet/ld1086.pdf</datasheet>
       <fields>
-        <field name="Part">LD1086DT33TR</field>
+        <field name="MPN1">LD1086DT33TR</field>
       </fields>
       <libsource lib="Regulator_Linear" part="LD1086DT33TR" description="Positive, 1.5A 30V, Linear Regulator, Fixed Output 3.3V, TO-252"/>
       <sheetpath names="/" tstamps="/"/>
@@ -989,7 +1009,7 @@
       <footprint>Capacitor_SMD:CP_Elec_5x5.8</footprint>
       <datasheet>https://www.cde.com/resources/catalogs/AFK.pdf</datasheet>
       <fields>
-        <field name="Part">EEE-HP0J100R</field>
+        <field name="MPN1">EEE-HP0J100R</field>
       </fields>
       <libsource lib="Device" part="CP" description="Polarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1000,7 +1020,7 @@
       <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">GRM32ER61C476KE15L</field>
+        <field name="MPN1">GRM32ER61C476KE15L</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1010,6 +1030,10 @@
       <value>SPI</value>
       <footprint>Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x06" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F4FEB11</tstamp>
@@ -1019,7 +1043,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE073K3L</field>
+        <field name="MPN1">RT0805FRE073K3L</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1030,7 +1054,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE073K3L</field>
+        <field name="MPN1">RT0805FRE073K3L</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1040,6 +1064,10 @@
       <value>SERIAL</value>
       <footprint>Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x06" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>601FA7CE</tstamp>
@@ -1049,7 +1077,7 @@
       <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">GRM32ER61C476KE15L</field>
+        <field name="MPN1">GRM32ER61C476KE15L</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1060,7 +1088,7 @@
       <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">GRM32ER61C476KE15L</field>
+        <field name="MPN1">GRM32ER61C476KE15L</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1070,6 +1098,10 @@
       <value>PIR</value>
       <footprint>Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6247059E</tstamp>
@@ -1078,6 +1110,10 @@
       <value>IO_EXP</value>
       <footprint>Connector_PinSocket_2.54mm:PinSocket_1x18_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x18" description="Generic connector, single row, 01x18, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>627467D3</tstamp>
@@ -1087,7 +1123,7 @@
       <footprint>LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">597-6901-607F</field>
+        <field name="MPN1">597-6901-607F</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1098,7 +1134,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE078K2L</field>
+        <field name="MPN1">RT0805FRE078K2L</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1108,6 +1144,10 @@
       <value>J5_V_SEL</value>
       <footprint>Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_3_Open" description="Solder Jumper, 3-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>62AD42DE</tstamp>
@@ -1117,7 +1157,7 @@
       <footprint>LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">APTL3216SYCK</field>
+        <field name="MPN1">APTL3216SYCK</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1128,7 +1168,7 @@
       <footprint>LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">APTL3216SYCK</field>
+        <field name="MPN1">APTL3216SYCK</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1138,6 +1178,10 @@
       <value>POWER SEL</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_02x04_Odd_Even" description="Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5EEFA0E1</tstamp>
@@ -1147,7 +1191,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RC0805FR-0710KL</field>
+        <field name="MPN1">RC0805FR-0710KL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1158,7 +1202,7 @@
       <footprint>LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">APTL3216CGCK</field>
+        <field name="MPN1">APTL3216CGCK</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1169,29 +1213,29 @@
       <footprint>LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">APTL3216CGCK</field>
+        <field name="MPN1">APTL3216CGCK</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>62533151</tstamp>
     </comp>
     <comp ref="R31">
-      <value>1K2</value>
+      <value>560</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE071K2L</field>
+        <field name="MPN1">RT0805FRE07560RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6253315B</tstamp>
     </comp>
     <comp ref="RV1">
-      <value>B72205S0400K101</value>
+      <value>N/A</value>
       <footprint>ClimateSprinklerController:RV_Disc_D7mm_W4mm_P5mm</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">B72205S0400K101</field>
+        <field name="MPN1">B72205S0400K101</field>
       </fields>
       <libsource lib="Device" part="Varistor" description="Voltage dependent resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1202,7 +1246,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">C2012X5R1H475K125AB</field>
+        <field name="MPN1">C2012X5R1H475K125AB</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1213,7 +1257,7 @@
       <footprint>ClimateSprinklerController:CP_Radial_Cutout_L20.0mm_D10.0mm_P5.00mm</footprint>
       <datasheet>http://products.nichicon.co.jp/en/pdf/XJA043/e-uvk.pdf</datasheet>
       <fields>
-        <field name="Part">UVK1H471MPD</field>
+        <field name="MPN1">UVK1H471MPD</field>
       </fields>
       <libsource lib="Device" part="CP" description="Polarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1224,7 +1268,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">C2012X5R1V106K085AC</field>
+        <field name="MPN1">C2012X5R1V106K085AC</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1235,7 +1279,7 @@
       <footprint>ClimateSprinklerController:PhoenixContact_SPTAF_1_12-3.5-IL_1x12_P3.50mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">1862039</field>
+        <field name="MPN1">1862039</field>
       </fields>
       <libsource lib="Connector" part="Screw_Terminal_01x12" description="Generic screw terminal, single row, 01x12, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1246,7 +1290,7 @@
       <footprint>ClimateSprinklerController:TO-225-3_Vertical</footprint>
       <datasheet>https://m.littelfuse.com/~/media/electronics/datasheets/switching_thyristors/littelfuse_thyristor_2n6071_d_datasheet.pdf.pdf</datasheet>
       <fields>
-        <field name="Part">2N6073BG</field>
+        <field name="MPN1">2N6073BG</field>
       </fields>
       <libsource lib="ClimateSprinklerController" part="2N6073B" description="4A RMS, 400V Off-State Voltage, Triac, TO-225"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1257,7 +1301,7 @@
       <footprint>ClimateSprinklerController:TO-225-3_Vertical</footprint>
       <datasheet>https://m.littelfuse.com/~/media/electronics/datasheets/switching_thyristors/littelfuse_thyristor_2n6071_d_datasheet.pdf.pdf</datasheet>
       <fields>
-        <field name="Part">2N6073BG</field>
+        <field name="MPN1">2N6073BG</field>
       </fields>
       <libsource lib="ClimateSprinklerController" part="2N6073B" description="4A RMS, 400V Off-State Voltage, Triac, TO-225"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1268,7 +1312,7 @@
       <footprint>ClimateSprinklerController:TO-225-3_Vertical</footprint>
       <datasheet>https://m.littelfuse.com/~/media/electronics/datasheets/switching_thyristors/littelfuse_thyristor_2n6071_d_datasheet.pdf.pdf</datasheet>
       <fields>
-        <field name="Part">2N6073BG</field>
+        <field name="MPN1">2N6073BG</field>
       </fields>
       <libsource lib="ClimateSprinklerController" part="2N6073B" description="4A RMS, 400V Off-State Voltage, Triac, TO-225"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1279,7 +1323,7 @@
       <footprint>ClimateSprinklerController:TO-225-3_Vertical</footprint>
       <datasheet>https://m.littelfuse.com/~/media/electronics/datasheets/switching_thyristors/littelfuse_thyristor_2n6071_d_datasheet.pdf.pdf</datasheet>
       <fields>
-        <field name="Part">2N6073BG</field>
+        <field name="MPN1">2N6073BG</field>
       </fields>
       <libsource lib="ClimateSprinklerController" part="2N6073B" description="4A RMS, 400V Off-State Voltage, Triac, TO-225"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1290,7 +1334,7 @@
       <footprint>ClimateSprinklerController:TO-225-3_Vertical</footprint>
       <datasheet>https://m.littelfuse.com/~/media/electronics/datasheets/switching_thyristors/littelfuse_thyristor_2n6071_d_datasheet.pdf.pdf</datasheet>
       <fields>
-        <field name="Part">2N6073BG</field>
+        <field name="MPN1">2N6073BG</field>
       </fields>
       <libsource lib="ClimateSprinklerController" part="2N6073B" description="4A RMS, 400V Off-State Voltage, Triac, TO-225"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1301,7 +1345,7 @@
       <footprint>ClimateSprinklerController:TO-225-3_Vertical</footprint>
       <datasheet>https://m.littelfuse.com/~/media/electronics/datasheets/switching_thyristors/littelfuse_thyristor_2n6071_d_datasheet.pdf.pdf</datasheet>
       <fields>
-        <field name="Part">2N6073BG</field>
+        <field name="MPN1">2N6073BG</field>
       </fields>
       <libsource lib="ClimateSprinklerController" part="2N6073B" description="4A RMS, 400V Off-State Voltage, Triac, TO-225"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1312,7 +1356,7 @@
       <footprint>ClimateSprinklerController:TO-225-3_Vertical</footprint>
       <datasheet>https://m.littelfuse.com/~/media/electronics/datasheets/switching_thyristors/littelfuse_thyristor_2n6071_d_datasheet.pdf.pdf</datasheet>
       <fields>
-        <field name="Part">2N6073BG</field>
+        <field name="MPN1">2N6073BG</field>
       </fields>
       <libsource lib="ClimateSprinklerController" part="2N6073B" description="4A RMS, 400V Off-State Voltage, Triac, TO-225"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1323,7 +1367,7 @@
       <footprint>ClimateSprinklerController:TO-225-3_Vertical</footprint>
       <datasheet>https://m.littelfuse.com/~/media/electronics/datasheets/switching_thyristors/littelfuse_thyristor_2n6071_d_datasheet.pdf.pdf</datasheet>
       <fields>
-        <field name="Part">2N6073BG</field>
+        <field name="MPN1">2N6073BG</field>
       </fields>
       <libsource lib="ClimateSprinklerController" part="2N6073B" description="4A RMS, 400V Off-State Voltage, Triac, TO-225"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1333,6 +1377,10 @@
       <value>PG_TO_EN</value>
       <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>622024DC</tstamp>
@@ -1342,7 +1390,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">CC0805KRX7R7BB104</field>
+        <field name="MPN1">CC0805KRX7R7BB104</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1353,7 +1401,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">CC0805KRX7R7BB104</field>
+        <field name="MPN1">CC0805KRX7R7BB104</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1364,7 +1412,7 @@
       <footprint>Fuse:Fuse_2920_7451Metric</footprint>
       <datasheet>http://m.littelfuse.com/~/media/electronics/datasheets/resettable_ptcs/littelfuse_ptc_2920l_datasheet.pdf.pdf</datasheet>
       <fields>
-        <field name="Part">2920L030DR</field>
+        <field name="MPN1">2920L030DR</field>
       </fields>
       <libsource lib="Device" part="Polyfuse" description="Resettable fuse, polymeric positive temperature coefficient"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1375,7 +1423,7 @@
       <footprint>Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx58-2LFS</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">PTS645VK582LFS</field>
+        <field name="MPN1">PTS645VK582LFS</field>
       </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1386,7 +1434,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE07820RL</field>
+        <field name="MPN1">RT0805FRE07820RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1397,7 +1445,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE07820RL</field>
+        <field name="MPN1">RT0805FRE07820RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1408,7 +1456,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE07820RL</field>
+        <field name="MPN1">RT0805FRE07820RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1419,7 +1467,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE07180RL</field>
+        <field name="MPN1">RT0805FRE07180RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1430,7 +1478,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">CC0805KRX7R7BB104</field>
+        <field name="MPN1">CC0805KRX7R7BB104</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1441,7 +1489,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">C2012X5R1H475K125AB</field>
+        <field name="MPN1">C2012X5R1H475K125AB</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1451,6 +1499,10 @@
       <value>U2_VCC_SEL</value>
       <footprint>Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_3_Open" description="Solder Jumper, 3-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F66DDEB</tstamp>
@@ -1460,29 +1512,29 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE079K1L</field>
+        <field name="MPN1">RC0805FR-0710KL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F70B1B2</tstamp>
     </comp>
     <comp ref="R33">
-      <value>1K2</value>
+      <value>1K5</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE072K7L</field>
+        <field name="MPN1">RT0805FRE071K5L</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F758965</tstamp>
     </comp>
     <comp ref="R34">
-      <value>1K2</value>
+      <value>1K5</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE072K7L</field>
+        <field name="MPN1">RT0805FRE071K5L</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1493,7 +1545,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE072K7L</field>
+        <field name="MPN1">RT0805FRE072K7L</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1504,7 +1556,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE072K7L</field>
+        <field name="MPN1">RT0805FRE072K7L</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1515,40 +1567,40 @@
       <footprint>LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">APTL3216ZGC</field>
+        <field name="MPN1">APTL3216ZGC</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F39ECDD</tstamp>
     </comp>
     <comp ref="R39">
-      <value>1K2</value>
+      <value>1K5</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE072K7L</field>
+        <field name="MPN1">RT0805FRE071K5L</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F921A8F</tstamp>
     </comp>
     <comp ref="R38">
-      <value>1K2</value>
+      <value>1K5</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE072K7L</field>
+        <field name="MPN1">RT0805FRE071K5L</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F920950</tstamp>
     </comp>
     <comp ref="R37">
-      <value>1K2</value>
+      <value>1K5</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE072K7L</field>
+        <field name="MPN1">RT0805FRE071K5L</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1557,8 +1609,9 @@
     <comp ref="U1">
       <value>ESP32-WROVER</value>
       <footprint>ClimateSprinklerController:ESP32-WROVER</footprint>
+      <datasheet>https://www.espressif.com/sites/default/files/documentation/esp32-wrover_datasheet_en.pdf</datasheet>
       <fields>
-        <field name="Part">ESP32-WROVER</field>
+        <field name="MPN1">ESP32-WROVER</field>
       </fields>
       <libsource lib="ClimateSprinklerController" part="ESP32-WROVER" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -1568,6 +1621,10 @@
       <value>MCP23017_A2</value>
       <footprint>Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_3_Bridged12" description="3-pole Solder Jumper, pins 1+2 closed/bridged"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5ED0FC33</tstamp>
@@ -1576,6 +1633,10 @@
       <value>MCP23017_A1</value>
       <footprint>Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_3_Bridged12" description="3-pole Solder Jumper, pins 1+2 closed/bridged"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5ED0FC25</tstamp>
@@ -1584,6 +1645,10 @@
       <value>MCP23017_A0</value>
       <footprint>Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_3_Bridged12" description="3-pole Solder Jumper, pins 1+2 closed/bridged"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5ED0FC18</tstamp>
@@ -1592,6 +1657,10 @@
       <value>INTA_TO_I36</value>
       <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60484FDA</tstamp>
@@ -1600,6 +1669,10 @@
       <value>INTB_TO_I39</value>
       <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60398E5C</tstamp>
@@ -1609,7 +1682,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RC0805FR-0710KL</field>
+        <field name="MPN1">RC0805FR-0710KL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1620,17 +1693,17 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RC0805FR-0710KL</field>
+        <field name="MPN1">RC0805FR-0710KL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60C66C1F</tstamp>
     </comp>
     <comp ref="U6">
-      <value>SGP40-Sensor_Air_Quality</value>
+      <value>SGP40</value>
       <footprint>ClimateSprinklerController:DFN-6-1EP_2.44x2.44mm_P0.8mm_EP1.25x1.7mm</footprint>
       <fields>
-        <field name="Part">SGP40</field>
+        <field name="MPN1">SGP40</field>
       </fields>
       <libsource lib="ClimateSprinklerController" part="SGP40-Sensor_Air_Quality" description="Indoor Air Quality Sensor for VOC Measurements"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1640,6 +1713,10 @@
       <value>TMP117_ALERT_TO_B7</value>
       <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>615CCA67</tstamp>
@@ -1649,7 +1726,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RC0805FR-07100KL</field>
+        <field name="MPN1">RC0805FR-07100KL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1660,7 +1737,7 @@
       <footprint>LED_THT:LED_D5.0mm_Clear</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">TEPT5700</field>
+        <field name="MPN1">TEPT5700</field>
       </fields>
       <libsource lib="Device" part="Q_Photo_NPN" description="NPN phototransistor, collector/emitter"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1670,6 +1747,10 @@
       <value>TMP117_A0</value>
       <footprint>Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_3_Bridged12" description="3-pole Solder Jumper, pins 1+2 closed/bridged"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FA853EE</tstamp>
@@ -1679,18 +1760,18 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">CC0805KRX7R7BB104</field>
+        <field name="MPN1">CC0805KRX7R7BB104</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FA4A51D</tstamp>
     </comp>
     <comp ref="U11">
-      <value>TMP117</value>
+      <value>TMP117MAIDRVR</value>
       <footprint>Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm</footprint>
       <datasheet>http://www.ti.com/lit/gpn/tmp101</datasheet>
       <fields>
-        <field name="Part">TMP117MAIDRVR</field>
+        <field name="MPN1">TMP117MAIDRVR</field>
       </fields>
       <libsource lib="ClimateSprinklerController" part="TMP117-Sensor_Temperature" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -1701,7 +1782,7 @@
       <footprint>Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering</footprint>
       <datasheet>https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280-DS002.pdf</datasheet>
       <fields>
-        <field name="Part">BME280</field>
+        <field name="MPN1">BME280</field>
       </fields>
       <libsource lib="Sensor" part="BME280" description="3-in-1 sensor, humidity, pressure, temperature, I2C and SPI interface, 1.71-3.6V, LGA-8"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1712,7 +1793,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">CC0805KRX7R7BB104</field>
+        <field name="MPN1">CC0805KRX7R7BB104</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1723,7 +1804,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">CC0805KRX7R7BB104</field>
+        <field name="MPN1">CC0805KRX7R7BB104</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1733,6 +1814,10 @@
       <value>BME280_A0</value>
       <footprint>Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_3_Bridged12" description="3-pole Solder Jumper, pins 1+2 closed/bridged"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F984110</tstamp>
@@ -1742,7 +1827,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">C0805C105K4RACTU</field>
+        <field name="MPN1">C0805C105K4RACTU</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1753,7 +1838,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">C0805C105K4RACTU</field>
+        <field name="MPN1">C0805C105K4RACTU</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1764,7 +1849,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RC0805FR-07100KL</field>
+        <field name="MPN1">RC0805FR-074R7L</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1774,6 +1859,10 @@
       <value>NEXTION</value>
       <footprint>Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>600D73C6</tstamp>
@@ -1783,7 +1872,7 @@
       <footprint>Package_LGA:Bosch_LGA-8_3x3mm_P0.8mm_ClockwisePinNumbering</footprint>
       <datasheet>https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME680-DS001.pdf</datasheet>
       <fields>
-        <field name="Part">BME680</field>
+        <field name="MPN1">BME680</field>
       </fields>
       <libsource lib="Sensor" part="BME680" description="4-in-1 sensor, gas, humidity, pressure, temperature, I2C and SPI interface, 1.71-3.6V, LGA-8"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1794,7 +1883,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">CC0805KRX7R7BB104</field>
+        <field name="MPN1">CC0805KRX7R7BB104</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1805,7 +1894,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">CC0805KRX7R7BB104</field>
+        <field name="MPN1">CC0805KRX7R7BB104</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1815,6 +1904,10 @@
       <value>BME680_A0</value>
       <footprint>Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_3_Bridged12" description="3-pole Solder Jumper, pins 1+2 closed/bridged"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>603409DD</tstamp>
@@ -1824,7 +1917,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">CC0805KRX7R7BB104</field>
+        <field name="MPN1">CC0805KRX7R7BB104</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1835,7 +1928,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RC0805FR-0710KL</field>
+        <field name="MPN1">RC0805FR-0710KL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1846,7 +1939,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RC0805FR-0710KL</field>
+        <field name="MPN1">RC0805FR-0710KL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1857,18 +1950,18 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">CRCW08055K00JNTA</field>
+        <field name="MPN1">CRCW08055K00JNTA</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F2B7097</tstamp>
     </comp>
     <comp ref="TH1">
-      <value>NXFT15XH103FA2B100</value>
+      <value>10K</value>
       <footprint>Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">NXFT15XH103FA2B100</field>
+        <field name="MPN1">NXFT15XH103FA2B100</field>
       </fields>
       <libsource lib="Device" part="Thermistor_NTC" description="Temperature dependent resistor, negative temperature coefficient"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1878,6 +1971,9 @@
       <value>G6E-134P-US DC5</value>
       <footprint>Relay_THT:Relay_SPDT_Omron_G6E</footprint>
       <datasheet>https://www.omron.com/ecb/products/pdf/en-g6e.pdf</datasheet>
+      <fields>
+        <field name="MPN1">G6E-134P-US DC5</field>
+      </fields>
       <libsource lib="Relay" part="G6E" description="Omron Subminiature Sensitive SPDT Signal Switching Relay, Single-Side Stable"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>605F907C</tstamp>
@@ -1886,6 +1982,9 @@
       <value>G6E-134P-US DC5</value>
       <footprint>Relay_THT:Relay_SPDT_Omron_G6E</footprint>
       <datasheet>https://www.omron.com/ecb/products/pdf/en-g6e.pdf</datasheet>
+      <fields>
+        <field name="MPN1">G6E-134P-US DC5</field>
+      </fields>
       <libsource lib="Relay" part="G6E" description="Omron Subminiature Sensitive SPDT Signal Switching Relay, Single-Side Stable"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>605FE539</tstamp>
@@ -1894,6 +1993,9 @@
       <value>G6E-134P-US DC5</value>
       <footprint>Relay_THT:Relay_SPDT_Omron_G6E</footprint>
       <datasheet>https://www.omron.com/ecb/products/pdf/en-g6e.pdf</datasheet>
+      <fields>
+        <field name="MPN1">G6E-134P-US DC5</field>
+      </fields>
       <libsource lib="Relay" part="G6E" description="Omron Subminiature Sensitive SPDT Signal Switching Relay, Single-Side Stable"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60600061</tstamp>
@@ -1902,6 +2004,10 @@
       <value>MountingHole_Pad</value>
       <footprint>MountingHole:MountingHole_3.2mm_M3_DIN965_Pad</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60646C44</tstamp>
@@ -1910,6 +2016,10 @@
       <value>MountingHole_Pad</value>
       <footprint>MountingHole:MountingHole_3.2mm_M3_DIN965_Pad</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60646C6A</tstamp>
@@ -1918,6 +2028,10 @@
       <value>MountingHole_Pad</value>
       <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60646C90</tstamp>
@@ -1926,6 +2040,10 @@
       <value>AR_IO0</value>
       <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>61DFF12A</tstamp>
@@ -1935,7 +2053,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RC0805FR-0710KL</field>
+        <field name="MPN1">RC0805FR-0710KL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1946,7 +2064,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RC0805FR-0710KL</field>
+        <field name="MPN1">RC0805FR-0710KL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1957,7 +2075,7 @@
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <datasheet>https://www.mccsemi.com/pdf/Products/MMSS8050(SOT-23).pdf</datasheet>
       <fields>
-        <field name="Part">MMSS8050</field>
+        <field name="MPN1">MMSS8050</field>
       </fields>
       <libsource lib="ClimateSprinklerController" part="MMSS8050" description="1.5A Ic, 25V Vce, NPN Transistor, SOT-23"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1968,7 +2086,7 @@
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <datasheet>https://www.mccsemi.com/pdf/Products/MMSS8050(SOT-23).pdf</datasheet>
       <fields>
-        <field name="Part">MMSS8050</field>
+        <field name="MPN1">MMSS8050</field>
       </fields>
       <libsource lib="ClimateSprinklerController" part="MMSS8050" description="1.5A Ic, 25V Vce, NPN Transistor, SOT-23"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1978,6 +2096,10 @@
       <value>AR_EN</value>
       <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>62618590</tstamp>
@@ -1986,6 +2108,10 @@
       <value>IO26/RTS</value>
       <footprint>Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_3_Open" description="Solder Jumper, 3-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6207B93B</tstamp>
@@ -1995,18 +2121,18 @@
       <footprint>Package_SO:SSOP-28_5.3x10.2mm_P0.65mm</footprint>
       <datasheet>https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf</datasheet>
       <fields>
-        <field name="Part">FT232RL</field>
+        <field name="MPN1">FT232RL</field>
       </fields>
       <libsource lib="Interface_USB" part="FT232RL" description="USB to Serial Interface, SSOP-28"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>62B9976F</tstamp>
     </comp>
     <comp ref="J2">
-      <value>USB_B_Micro</value>
+      <value>N/A</value>
       <footprint>Connector_USB:USB_Micro-B_Molex-105017-0001</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">105017-0001</field>
+        <field name="MPN1">105017-0001</field>
       </fields>
       <libsource lib="Connector" part="USB_B_Micro" description="USB Micro Type B connector"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2017,7 +2143,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">CC0805KRX7R7BB104</field>
+        <field name="MPN1">CC0805KRX7R7BB104</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2028,7 +2154,7 @@
       <footprint>LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">APTL3216QBC/D</field>
+        <field name="MPN1">APTL3216QBC/D</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2039,7 +2165,7 @@
       <footprint>LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">APTL3216SURCK</field>
+        <field name="MPN1">APTL3216SURCK</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2050,7 +2176,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">CC0805KRX7R7BB104</field>
+        <field name="MPN1">CC0805KRX7R7BB104</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2061,7 +2187,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">C2012X5R1H475K125AB</field>
+        <field name="MPN1">C2012X5R1H475K125AB</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2072,7 +2198,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE072K7L</field>
+        <field name="MPN1">RT0805FRE072K7L</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2083,7 +2209,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE072K7L</field>
+        <field name="MPN1">RT0805FRE072K7L</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2094,7 +2220,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RC0805FR-0710KL</field>
+        <field name="MPN1">RC0805FR-0710KL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2105,7 +2231,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RC0805FR-0710KL</field>
+        <field name="MPN1">RC0805FR-0710KL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2116,7 +2242,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE074K7L</field>
+        <field name="MPN1">RT0805FRE074K7L</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2127,7 +2253,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">CC0805KRX7R7BB104</field>
+        <field name="MPN1">CC0805KRX7R7BB104</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2138,7 +2264,7 @@
       <footprint>Button_Switch_THT:SW_Push_1P2T_Vertical_E-Switch_800UDP8P1A1M6</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">48BFSP1M6QT</field>
+        <field name="MPN1">48BFSP1M6QT</field>
       </fields>
       <libsource lib="Switch" part="SW_SPDT" description="Switch, single pole double throw"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2148,6 +2274,10 @@
       <value>IO15</value>
       <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F6E4C67</tstamp>
@@ -2157,7 +2287,7 @@
       <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
       <datasheet>http://www.ti.com/lit/ds/symlink/tps22917.pdf</datasheet>
       <fields>
-        <field name="Part">TPS22917DBV</field>
+        <field name="MPN1">TPS22917DBV</field>
       </fields>
       <libsource lib="Power_Management" part="TPS22917DBV" description="1V to 5.5V, 2A, 80mΩ Ultra-Low Leakage Load Switch, SOT23-6"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2168,7 +2298,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">C2012X5R1H475K125AB</field>
+        <field name="MPN1">C2012X5R1H475K125AB</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2179,7 +2309,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">CC0805KRX7R7BB104</field>
+        <field name="MPN1">CC0805KRX7R7BB104</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2190,7 +2320,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RC0805FR-07100KL</field>
+        <field name="MPN1">RC0805FR-074R7L</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2200,6 +2330,10 @@
       <value>U4_BYPASS</value>
       <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>667BBCBE</tstamp>
@@ -2208,6 +2342,10 @@
       <value>I2C</value>
       <footprint>Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x05" description="Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>66A85A47</tstamp>
@@ -2217,7 +2355,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RT0805FRE079K1L</field>
+        <field name="MPN1">RC0805FR-0710KL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2228,7 +2366,7 @@
       <footprint>LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">APTL3216ZGC</field>
+        <field name="MPN1">APTL3216ZGC</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2239,7 +2377,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">CC0805KRX7R7BB104</field>
+        <field name="MPN1">CC0805KRX7R7BB104</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2249,6 +2387,10 @@
       <value>MountingHole_Pad</value>
       <footprint>MountingHole:MountingHole_3.2mm_M3_DIN965_Pad</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>674FEA0D</tstamp>
@@ -2257,6 +2399,10 @@
       <value>MountingHole_Pad</value>
       <footprint>MountingHole:MountingHole_3.2mm_M3_DIN965_Pad</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>674FEA33</tstamp>
@@ -2265,6 +2411,10 @@
       <value>MountingHole</value>
       <footprint>MountingHole:MountingHole_4.3mm_M4_DIN965_Pad</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6756115B</tstamp>
@@ -2273,6 +2423,10 @@
       <value>MountingHole</value>
       <footprint>MountingHole:MountingHole_4.3mm_M4_DIN965_Pad</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>675639FC</tstamp>
@@ -2281,6 +2435,10 @@
       <value>MountingHole</value>
       <footprint>MountingHole:MountingHole_4.3mm_M4_DIN965_Pad</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>675C343A</tstamp>
@@ -2289,16 +2447,20 @@
       <value>MountingHole</value>
       <footprint>MountingHole:MountingHole_4.3mm_M4_DIN965_Pad</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN1">N/A</field>
+        <field name="Population">DNF</field>
+      </fields>
       <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>675C344C</tstamp>
     </comp>
     <comp ref="D1">
-      <value>MBR230S1F-7</value>
+      <value>N/A</value>
       <footprint>Diode_SMD:D_SOD-123F</footprint>
       <datasheet>https://www.diodes.com/assets/Datasheets/MBR230S1F.pdf</datasheet>
       <fields>
-        <field name="Part">MBR230S1F-7</field>
+        <field name="MPN1">MBR230S1F-7</field>
       </fields>
       <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2309,7 +2471,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Part">RC0805FR-0710KL</field>
+        <field name="MPN1">RC0805FR-0710KL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -3352,8 +3514,8 @@
   </libraries>
   <nets>
     <net code="1" name="Net-(R43-Pad1)">
-      <node ref="R43" pin="1"/>
       <node ref="U15" pin="2"/>
+      <node ref="R43" pin="1"/>
     </net>
     <net code="2" name="Net-(U15-Pad3)">
       <node ref="U15" pin="3"/>
@@ -3367,40 +3529,40 @@
       <node ref="U15" pin="5"/>
     </net>
     <net code="5" name="Net-(R51-Pad2)">
-      <node ref="R51" pin="2"/>
       <node ref="U15" pin="6"/>
+      <node ref="R51" pin="2"/>
     </net>
     <net code="6" name="/RH_TERM">
-      <node ref="Q11" pin="2"/>
       <node ref="J3" pin="5"/>
-      <node ref="R68" pin="1"/>
       <node ref="R51" pin="1"/>
-      <node ref="Q10" pin="2"/>
+      <node ref="R68" pin="1"/>
       <node ref="J10" pin="3"/>
       <node ref="R52" pin="1"/>
+      <node ref="Q11" pin="2"/>
+      <node ref="Q10" pin="2"/>
       <node ref="R69" pin="1"/>
     </net>
     <net code="7" name="Net-(C36-Pad1)">
-      <node ref="R68" pin="2"/>
       <node ref="C36" pin="1"/>
+      <node ref="R68" pin="2"/>
     </net>
     <net code="8" name="/W1_TERM">
-      <node ref="C36" pin="2"/>
-      <node ref="R59" pin="2"/>
       <node ref="Q10" pin="1"/>
       <node ref="J10" pin="9"/>
+      <node ref="R59" pin="2"/>
+      <node ref="C36" pin="2"/>
     </net>
     <net code="9" name="Net-(R44-Pad1)">
-      <node ref="R44" pin="1"/>
       <node ref="U16" pin="2"/>
+      <node ref="R44" pin="1"/>
     </net>
     <net code="10" name="Net-(U16-Pad3)">
       <node ref="U16" pin="3"/>
     </net>
     <net code="11" name="Net-(Q11-Pad3)">
-      <node ref="Q11" pin="3"/>
-      <node ref="R60" pin="1"/>
       <node ref="U16" pin="4"/>
+      <node ref="R60" pin="1"/>
+      <node ref="Q11" pin="3"/>
     </net>
     <net code="12" name="Net-(U16-Pad5)">
       <node ref="U16" pin="5"/>
@@ -3410,26 +3572,26 @@
       <node ref="U16" pin="6"/>
     </net>
     <net code="14" name="Net-(C37-Pad1)">
-      <node ref="R69" pin="2"/>
       <node ref="C37" pin="1"/>
+      <node ref="R69" pin="2"/>
     </net>
     <net code="15" name="/W2_TERM">
-      <node ref="J10" pin="8"/>
+      <node ref="Q11" pin="1"/>
       <node ref="R60" pin="2"/>
       <node ref="C37" pin="2"/>
-      <node ref="Q11" pin="1"/>
+      <node ref="J10" pin="8"/>
     </net>
     <net code="16" name="Net-(R45-Pad1)">
-      <node ref="U17" pin="2"/>
       <node ref="R45" pin="1"/>
+      <node ref="U17" pin="2"/>
     </net>
     <net code="17" name="Net-(U17-Pad3)">
       <node ref="U17" pin="3"/>
     </net>
     <net code="18" name="Net-(Q12-Pad3)">
+      <node ref="U17" pin="4"/>
       <node ref="R61" pin="1"/>
       <node ref="Q12" pin="3"/>
-      <node ref="U17" pin="4"/>
     </net>
     <net code="19" name="Net-(U17-Pad5)">
       <node ref="U17" pin="5"/>
@@ -3444,69 +3606,69 @@
     </net>
     <net code="22" name="/MISC1_TERM">
       <node ref="Q12" pin="1"/>
-      <node ref="J10" pin="7"/>
       <node ref="C38" pin="2"/>
+      <node ref="J10" pin="7"/>
       <node ref="R61" pin="2"/>
     </net>
     <net code="23" name="Net-(R46-Pad1)">
-      <node ref="U18" pin="2"/>
       <node ref="R46" pin="1"/>
+      <node ref="U18" pin="2"/>
     </net>
     <net code="24" name="Net-(U18-Pad3)">
       <node ref="U18" pin="3"/>
     </net>
     <net code="25" name="Net-(Q13-Pad3)">
-      <node ref="U18" pin="4"/>
       <node ref="R62" pin="1"/>
       <node ref="Q13" pin="3"/>
+      <node ref="U18" pin="4"/>
     </net>
     <net code="26" name="Net-(U18-Pad5)">
       <node ref="U18" pin="5"/>
     </net>
     <net code="27" name="Net-(R54-Pad2)">
-      <node ref="U18" pin="6"/>
       <node ref="R54" pin="2"/>
+      <node ref="U18" pin="6"/>
     </net>
     <net code="28" name="Net-(C39-Pad1)">
-      <node ref="R71" pin="2"/>
       <node ref="C39" pin="1"/>
+      <node ref="R71" pin="2"/>
     </net>
     <net code="29" name="/MISC2_TERM">
-      <node ref="R62" pin="2"/>
-      <node ref="C39" pin="2"/>
       <node ref="J10" pin="6"/>
       <node ref="Q13" pin="1"/>
+      <node ref="C39" pin="2"/>
+      <node ref="R62" pin="2"/>
     </net>
     <net code="30" name="Net-(R41-Pad1)">
-      <node ref="U13" pin="2"/>
       <node ref="R41" pin="1"/>
+      <node ref="U13" pin="2"/>
     </net>
     <net code="31" name="Net-(U13-Pad3)">
       <node ref="U13" pin="3"/>
     </net>
     <net code="32" name="Net-(Q8-Pad3)">
+      <node ref="Q8" pin="3"/>
       <node ref="U13" pin="4"/>
       <node ref="R57" pin="1"/>
-      <node ref="Q8" pin="3"/>
     </net>
     <net code="33" name="Net-(U13-Pad5)">
       <node ref="U13" pin="5"/>
     </net>
     <net code="34" name="Net-(R49-Pad2)">
-      <node ref="R49" pin="2"/>
       <node ref="U13" pin="6"/>
+      <node ref="R49" pin="2"/>
     </net>
     <net code="35" name="/RC_TERM">
+      <node ref="Q9" pin="2"/>
+      <node ref="J10" pin="4"/>
+      <node ref="Q8" pin="2"/>
       <node ref="R67" pin="1"/>
       <node ref="Q7" pin="2"/>
       <node ref="R50" pin="1"/>
-      <node ref="J10" pin="4"/>
       <node ref="R48" pin="1"/>
-      <node ref="Q9" pin="2"/>
-      <node ref="J3" pin="7"/>
       <node ref="R49" pin="1"/>
+      <node ref="J3" pin="7"/>
       <node ref="R65" pin="1"/>
-      <node ref="Q8" pin="2"/>
       <node ref="R66" pin="1"/>
     </net>
     <net code="36" name="Net-(C34-Pad1)">
@@ -3527,9 +3689,9 @@
       <node ref="U14" pin="3"/>
     </net>
     <net code="40" name="Net-(Q9-Pad3)">
-      <node ref="Q9" pin="3"/>
       <node ref="R58" pin="1"/>
       <node ref="U14" pin="4"/>
+      <node ref="Q9" pin="3"/>
     </net>
     <net code="41" name="Net-(U14-Pad5)">
       <node ref="U14" pin="5"/>
@@ -3543,51 +3705,51 @@
       <node ref="C35" pin="1"/>
     </net>
     <net code="44" name="/Y2_TERM">
+      <node ref="J10" pin="10"/>
       <node ref="Q9" pin="1"/>
       <node ref="C35" pin="2"/>
       <node ref="R58" pin="2"/>
-      <node ref="J10" pin="10"/>
     </net>
     <net code="45" name="Net-(R40-Pad1)">
-      <node ref="U12" pin="2"/>
       <node ref="R40" pin="1"/>
+      <node ref="U12" pin="2"/>
     </net>
     <net code="46" name="Net-(U12-Pad3)">
       <node ref="U12" pin="3"/>
     </net>
     <net code="47" name="Net-(Q7-Pad3)">
       <node ref="Q7" pin="3"/>
-      <node ref="R56" pin="1"/>
       <node ref="U12" pin="4"/>
+      <node ref="R56" pin="1"/>
     </net>
     <net code="48" name="Net-(U12-Pad5)">
       <node ref="U12" pin="5"/>
     </net>
     <net code="49" name="Net-(R48-Pad2)">
-      <node ref="R48" pin="2"/>
       <node ref="U12" pin="6"/>
+      <node ref="R48" pin="2"/>
     </net>
     <net code="50" name="Net-(C33-Pad1)">
-      <node ref="C33" pin="1"/>
       <node ref="R65" pin="2"/>
+      <node ref="C33" pin="1"/>
     </net>
     <net code="51" name="/G_TERM">
-      <node ref="C33" pin="2"/>
-      <node ref="R56" pin="2"/>
       <node ref="J10" pin="12"/>
       <node ref="Q7" pin="1"/>
+      <node ref="R56" pin="2"/>
+      <node ref="C33" pin="2"/>
     </net>
     <net code="52" name="Net-(R47-Pad1)">
-      <node ref="R47" pin="1"/>
       <node ref="U19" pin="2"/>
+      <node ref="R47" pin="1"/>
     </net>
     <net code="53" name="Net-(U19-Pad3)">
       <node ref="U19" pin="3"/>
     </net>
     <net code="54" name="Net-(Q14-Pad3)">
       <node ref="R63" pin="1"/>
-      <node ref="Q14" pin="3"/>
       <node ref="U19" pin="4"/>
+      <node ref="Q14" pin="3"/>
     </net>
     <net code="55" name="Net-(U19-Pad5)">
       <node ref="U19" pin="5"/>
@@ -3597,185 +3759,187 @@
       <node ref="U19" pin="6"/>
     </net>
     <net code="57" name="/RMISC_TERM">
-      <node ref="Q13" pin="2"/>
-      <node ref="Q12" pin="2"/>
-      <node ref="Q14" pin="2"/>
       <node ref="J3" pin="3"/>
-      <node ref="R70" pin="1"/>
+      <node ref="Q14" pin="2"/>
+      <node ref="R72" pin="1"/>
       <node ref="R53" pin="1"/>
+      <node ref="R70" pin="1"/>
       <node ref="R55" pin="1"/>
       <node ref="J10" pin="2"/>
-      <node ref="R72" pin="1"/>
       <node ref="R54" pin="1"/>
       <node ref="R71" pin="1"/>
+      <node ref="Q12" pin="2"/>
+      <node ref="Q13" pin="2"/>
     </net>
     <net code="58" name="Net-(C40-Pad1)">
       <node ref="R72" pin="2"/>
       <node ref="C40" pin="1"/>
     </net>
     <net code="59" name="/MISC3_TERM">
-      <node ref="C40" pin="2"/>
-      <node ref="J10" pin="5"/>
-      <node ref="R63" pin="2"/>
       <node ref="Q14" pin="1"/>
+      <node ref="C40" pin="2"/>
+      <node ref="R63" pin="2"/>
+      <node ref="J10" pin="5"/>
     </net>
     <net code="60" name="GND">
-      <node ref="JP15" pin="1"/>
-      <node ref="Q5" pin="2"/>
-      <node ref="C7" pin="2"/>
-      <node ref="C9" pin="2"/>
-      <node ref="C1" pin="1"/>
-      <node ref="C27" pin="2"/>
-      <node ref="C28" pin="2"/>
-      <node ref="Q6" pin="2"/>
-      <node ref="R31" pin="1"/>
-      <node ref="U9" pin="7"/>
-      <node ref="J11" pin="2"/>
-      <node ref="U9" pin="1"/>
-      <node ref="U11" pin="2"/>
-      <node ref="C31" pin="2"/>
-      <node ref="R41" pin="2"/>
-      <node ref="R42" pin="2"/>
-      <node ref="R40" pin="2"/>
-      <node ref="R47" pin="2"/>
-      <node ref="R8" pin="2"/>
-      <node ref="JP17" pin="1"/>
-      <node ref="H7" pin="1"/>
-      <node ref="H8" pin="1"/>
-      <node ref="H6" pin="1"/>
-      <node ref="R19" pin="1"/>
-      <node ref="R29" pin="1"/>
-      <node ref="D6" pin="1"/>
-      <node ref="J4" pin="1"/>
-      <node ref="U6" pin="7"/>
-      <node ref="R30" pin="1"/>
-      <node ref="U6" pin="4"/>
-      <node ref="U6" pin="2"/>
-      <node ref="H10" pin="1"/>
-      <node ref="H9" pin="1"/>
-      <node ref="C10" pin="2"/>
-      <node ref="J9" pin="18"/>
-      <node ref="J9" pin="1"/>
-      <node ref="R44" pin="2"/>
-      <node ref="U2" pin="10"/>
-      <node ref="C8" pin="2"/>
-      <node ref="U7" pin="1"/>
-      <node ref="U7" pin="7"/>
-      <node ref="J7" pin="1"/>
       <node ref="JP1" pin="1"/>
-      <node ref="C21" pin="2"/>
-      <node ref="C32" pin="2"/>
       <node ref="JP2" pin="1"/>
-      <node ref="C17" pin="2"/>
-      <node ref="D5" pin="1"/>
-      <node ref="C16" pin="2"/>
-      <node ref="U3" pin="18"/>
       <node ref="JP3" pin="1"/>
+      <node ref="Q5" pin="2"/>
       <node ref="C24" pin="2"/>
-      <node ref="TH1" pin="1"/>
-      <node ref="R23" pin="1"/>
-      <node ref="U3" pin="21"/>
-      <node ref="U3" pin="25"/>
-      <node ref="U3" pin="26"/>
-      <node ref="C30" pin="2"/>
-      <node ref="U3" pin="7"/>
       <node ref="U1" pin="39"/>
       <node ref="U1" pin="38"/>
-      <node ref="U10" pin="4"/>
+      <node ref="C23" pin="2"/>
+      <node ref="U1" pin="15"/>
+      <node ref="U1" pin="1"/>
+      <node ref="Q6" pin="2"/>
+      <node ref="R37" pin="2"/>
+      <node ref="R38" pin="2"/>
+      <node ref="R39" pin="2"/>
+      <node ref="JP14" pin="1"/>
+      <node ref="R36" pin="2"/>
+      <node ref="R35" pin="2"/>
+      <node ref="R34" pin="2"/>
+      <node ref="R33" pin="2"/>
+      <node ref="R32" pin="2"/>
+      <node ref="R29" pin="1"/>
+      <node ref="C12" pin="2"/>
+      <node ref="R30" pin="1"/>
+      <node ref="H10" pin="1"/>
+      <node ref="C29" pin="2"/>
+      <node ref="H9" pin="1"/>
+      <node ref="C10" pin="2"/>
+      <node ref="U2" pin="10"/>
+      <node ref="U7" pin="7"/>
+      <node ref="U7" pin="1"/>
+      <node ref="Q4" pin="2"/>
+      <node ref="SW3" pin="2"/>
       <node ref="C22" pin="2"/>
+      <node ref="R23" pin="1"/>
+      <node ref="TH1" pin="1"/>
+      <node ref="C32" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C17" pin="2"/>
+      <node ref="D5" pin="1"/>
+      <node ref="U6" pin="2"/>
+      <node ref="U6" pin="4"/>
+      <node ref="U6" pin="7"/>
+      <node ref="J4" pin="1"/>
+      <node ref="R19" pin="1"/>
+      <node ref="JP17" pin="1"/>
+      <node ref="C30" pin="2"/>
+      <node ref="C31" pin="2"/>
+      <node ref="U11" pin="2"/>
+      <node ref="U10" pin="4"/>
+      <node ref="U9" pin="1"/>
+      <node ref="U9" pin="7"/>
+      <node ref="J11" pin="2"/>
+      <node ref="C1" pin="1"/>
       <node ref="U20" pin="4"/>
       <node ref="H4" pin="1"/>
       <node ref="H5" pin="1"/>
       <node ref="H1" pin="1"/>
       <node ref="H2" pin="1"/>
       <node ref="H3" pin="1"/>
-      <node ref="C23" pin="2"/>
-      <node ref="J2" pin="5"/>
+      <node ref="C7" pin="2"/>
       <node ref="C14" pin="2"/>
-      <node ref="J2" pin="6"/>
       <node ref="J8" pin="1"/>
+      <node ref="C9" pin="2"/>
+      <node ref="R31" pin="1"/>
       <node ref="D2" pin="4"/>
-      <node ref="Q4" pin="2"/>
-      <node ref="SW3" pin="2"/>
-      <node ref="U5" pin="1"/>
-      <node ref="R43" pin="2"/>
-      <node ref="C11" pin="2"/>
-      <node ref="U1" pin="15"/>
-      <node ref="U1" pin="1"/>
-      <node ref="C19" pin="1"/>
-      <node ref="R46" pin="2"/>
-      <node ref="U5" pin="9"/>
       <node ref="R45" pin="2"/>
+      <node ref="U5" pin="1"/>
+      <node ref="R46" pin="2"/>
+      <node ref="C28" pin="2"/>
+      <node ref="C27" pin="2"/>
+      <node ref="R43" pin="2"/>
+      <node ref="H7" pin="1"/>
+      <node ref="U5" pin="9"/>
       <node ref="C13" pin="2"/>
+      <node ref="H8" pin="1"/>
+      <node ref="H6" pin="1"/>
       <node ref="C5" pin="2"/>
+      <node ref="D6" pin="1"/>
       <node ref="U4" pin="2"/>
       <node ref="R17" pin="2"/>
-      <node ref="SW2" pin="1"/>
-      <node ref="R37" pin="2"/>
-      <node ref="R38" pin="2"/>
-      <node ref="R39" pin="2"/>
-      <node ref="JP14" pin="1"/>
+      <node ref="R44" pin="2"/>
+      <node ref="J9" pin="18"/>
+      <node ref="U3" pin="18"/>
+      <node ref="J9" pin="1"/>
+      <node ref="J7" pin="1"/>
+      <node ref="C21" pin="2"/>
+      <node ref="C16" pin="2"/>
+      <node ref="U3" pin="21"/>
+      <node ref="U3" pin="25"/>
+      <node ref="U3" pin="26"/>
+      <node ref="U3" pin="7"/>
+      <node ref="JP15" pin="1"/>
       <node ref="C20" pin="1"/>
-      <node ref="C29" pin="2"/>
-      <node ref="C4" pin="2"/>
-      <node ref="C12" pin="2"/>
-      <node ref="C2" pin="2"/>
+      <node ref="R8" pin="2"/>
+      <node ref="R47" pin="2"/>
       <node ref="C3" pin="2"/>
-      <node ref="J5" pin="1"/>
-      <node ref="R36" pin="2"/>
-      <node ref="R35" pin="2"/>
-      <node ref="R5" pin="1"/>
+      <node ref="R40" pin="2"/>
+      <node ref="R42" pin="2"/>
+      <node ref="R41" pin="2"/>
+      <node ref="C19" pin="1"/>
+      <node ref="SW2" pin="1"/>
+      <node ref="J2" pin="5"/>
+      <node ref="J2" pin="6"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C2" pin="2"/>
       <node ref="C26" pin="2"/>
-      <node ref="J6" pin="2"/>
+      <node ref="R5" pin="1"/>
       <node ref="D7" pin="1"/>
+      <node ref="J5" pin="1"/>
       <node ref="U8" pin="1"/>
-      <node ref="R34" pin="2"/>
       <node ref="C25" pin="2"/>
-      <node ref="R33" pin="2"/>
-      <node ref="R32" pin="2"/>
+      <node ref="J6" pin="2"/>
       <node ref="C18" pin="2"/>
     </net>
     <net code="61" name="+3V3">
-      <node ref="JP7" pin="3"/>
-      <node ref="U8" pin="2"/>
-      <node ref="R26" pin="1"/>
+      <node ref="U1" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="U20" pin="1"/>
       <node ref="J6" pin="1"/>
-      <node ref="C26" pin="1"/>
-      <node ref="R28" pin="1"/>
+      <node ref="JP14" pin="3"/>
+      <node ref="C31" pin="1"/>
+      <node ref="J8" pin="2"/>
+      <node ref="U8" pin="2"/>
       <node ref="R21" pin="1"/>
       <node ref="R18" pin="1"/>
-      <node ref="C1" pin="2"/>
-      <node ref="C27" pin="1"/>
-      <node ref="C28" pin="1"/>
-      <node ref="U9" pin="8"/>
-      <node ref="U9" pin="6"/>
-      <node ref="U9" pin="2"/>
-      <node ref="R6" pin="2"/>
-      <node ref="U11" pin="5"/>
-      <node ref="R7" pin="2"/>
-      <node ref="C31" pin="1"/>
-      <node ref="JP14" pin="3"/>
-      <node ref="U1" pin="2"/>
-      <node ref="JP17" pin="3"/>
-      <node ref="J8" pin="2"/>
+      <node ref="R26" pin="1"/>
+      <node ref="C19" pin="2"/>
+      <node ref="C26" pin="1"/>
+      <node ref="R28" pin="1"/>
       <node ref="C23" pin="1"/>
       <node ref="U10" pin="1"/>
-      <node ref="JP9" pin="3"/>
-      <node ref="C30" pin="1"/>
       <node ref="C24" pin="1"/>
-      <node ref="R64" pin="2"/>
-      <node ref="Q3" pin="1"/>
+      <node ref="JP7" pin="3"/>
+      <node ref="JP15" pin="3"/>
+      <node ref="C30" pin="1"/>
       <node ref="U7" pin="8"/>
-      <node ref="R20" pin="1"/>
       <node ref="U7" pin="6"/>
-      <node ref="J7" pin="4"/>
       <node ref="U7" pin="2"/>
       <node ref="R2" pin="1"/>
       <node ref="R3" pin="1"/>
-      <node ref="U6" pin="5"/>
-      <node ref="C19" pin="2"/>
-      <node ref="JP15" pin="3"/>
+      <node ref="U11" pin="5"/>
+      <node ref="U9" pin="2"/>
       <node ref="R1" pin="1"/>
+      <node ref="R64" pin="2"/>
+      <node ref="JP17" pin="3"/>
+      <node ref="U6" pin="5"/>
+      <node ref="R7" pin="2"/>
+      <node ref="J7" pin="4"/>
+      <node ref="R20" pin="1"/>
+      <node ref="JP9" pin="3"/>
+      <node ref="R6" pin="2"/>
+      <node ref="U9" pin="6"/>
+      <node ref="U9" pin="8"/>
+      <node ref="C32" pin="1"/>
+      <node ref="Q3" pin="1"/>
+      <node ref="C27" pin="1"/>
+      <node ref="C28" pin="1"/>
     </net>
     <net code="62" name="Net-(U1-Pad19)">
       <node ref="U1" pin="19"/>
@@ -3804,74 +3968,72 @@
       <node ref="R34" pin="1"/>
     </net>
     <net code="70" name="Net-(D19-Pad1)">
-      <node ref="D19" pin="1"/>
       <node ref="R36" pin="1"/>
+      <node ref="D19" pin="1"/>
     </net>
     <net code="71" name="Net-(D18-Pad1)">
-      <node ref="D18" pin="1"/>
       <node ref="R35" pin="1"/>
+      <node ref="D18" pin="1"/>
     </net>
     <net code="72" name="Net-(D20-Pad1)">
       <node ref="R37" pin="1"/>
       <node ref="D20" pin="1"/>
     </net>
     <net code="73" name="/ESP_EN">
-      <node ref="C8" pin="1"/>
-      <node ref="U1" pin="3"/>
-      <node ref="R6" pin="1"/>
       <node ref="JP11" pin="2"/>
-      <node ref="SW2" pin="2"/>
+      <node ref="R6" pin="1"/>
+      <node ref="C8" pin="1"/>
       <node ref="JP10" pin="1"/>
+      <node ref="U1" pin="3"/>
+      <node ref="SW2" pin="2"/>
     </net>
     <net code="74" name="/ESP_TXD">
-      <node ref="U3" pin="5"/>
       <node ref="U1" pin="35"/>
+      <node ref="U3" pin="5"/>
       <node ref="J5" pin="5"/>
     </net>
     <net code="75" name="/ESP_RXD">
+      <node ref="U1" pin="34"/>
       <node ref="U3" pin="1"/>
       <node ref="J5" pin="4"/>
-      <node ref="U1" pin="34"/>
     </net>
     <net code="76" name="/MODE">
       <node ref="R7" pin="1"/>
-      <node ref="JP12" pin="2"/>
       <node ref="SW3" pin="1"/>
+      <node ref="JP12" pin="2"/>
       <node ref="U1" pin="25"/>
     </net>
     <net code="77" name="+5V">
-      <node ref="K1" pin="1"/>
       <node ref="K2" pin="1"/>
-      <node ref="U20" pin="1"/>
+      <node ref="C18" pin="1"/>
+      <node ref="K1" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="D13" pin="1"/>
+      <node ref="D11" pin="1"/>
+      <node ref="K3" pin="1"/>
+      <node ref="C25" pin="1"/>
+      <node ref="U8" pin="3"/>
       <node ref="JP6" pin="2"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C4" pin="1"/>
       <node ref="C6" pin="2"/>
       <node ref="L1" pin="2"/>
       <node ref="C5" pin="1"/>
-      <node ref="R16" pin="1"/>
-      <node ref="K3" pin="1"/>
-      <node ref="U4" pin="1"/>
-      <node ref="C2" pin="1"/>
       <node ref="JP9" pin="1"/>
       <node ref="R24" pin="2"/>
-      <node ref="D1" pin="1"/>
+      <node ref="R16" pin="1"/>
+      <node ref="U4" pin="1"/>
       <node ref="C3" pin="1"/>
+      <node ref="JP7" pin="1"/>
       <node ref="J7" pin="3"/>
-      <node ref="D9" pin="1"/>
-      <node ref="C32" pin="1"/>
       <node ref="C21" pin="1"/>
       <node ref="C16" pin="1"/>
-      <node ref="U8" pin="3"/>
-      <node ref="C25" pin="1"/>
       <node ref="U3" pin="20"/>
-      <node ref="C18" pin="1"/>
-      <node ref="D13" pin="1"/>
-      <node ref="C4" pin="1"/>
-      <node ref="JP7" pin="1"/>
-      <node ref="D11" pin="1"/>
+      <node ref="D9" pin="1"/>
     </net>
     <net code="78" name="Net-(D9-Pad2)">
-      <node ref="D9" pin="2"/>
       <node ref="Q4" pin="3"/>
+      <node ref="D9" pin="2"/>
       <node ref="K1" pin="6"/>
     </net>
     <net code="79" name="/RELAY_1_NO_TERM">
@@ -3887,30 +4049,30 @@
       <node ref="J11" pin="4"/>
     </net>
     <net code="82" name="Net-(D11-Pad2)">
-      <node ref="K2" pin="6"/>
-      <node ref="D11" pin="2"/>
       <node ref="Q5" pin="3"/>
+      <node ref="D11" pin="2"/>
+      <node ref="K2" pin="6"/>
     </net>
     <net code="83" name="/RELAY_2_NO_TERM">
-      <node ref="J11" pin="9"/>
       <node ref="K2" pin="12"/>
+      <node ref="J11" pin="9"/>
     </net>
     <net code="84" name="/RELAY_2_NC_TERM">
-      <node ref="J11" pin="8"/>
       <node ref="K2" pin="10"/>
+      <node ref="J11" pin="8"/>
     </net>
     <net code="85" name="/RELAY_2_COM_TERM">
       <node ref="J11" pin="7"/>
       <node ref="K2" pin="7"/>
     </net>
     <net code="86" name="Net-(D13-Pad2)">
-      <node ref="K3" pin="6"/>
       <node ref="D13" pin="2"/>
       <node ref="Q6" pin="3"/>
+      <node ref="K3" pin="6"/>
     </net>
     <net code="87" name="/RELAY_3_NO_TERM">
-      <node ref="K3" pin="12"/>
       <node ref="J11" pin="12"/>
+      <node ref="K3" pin="12"/>
     </net>
     <net code="88" name="/RELAY_3_NC_TERM">
       <node ref="J11" pin="11"/>
@@ -3921,30 +4083,30 @@
       <node ref="K3" pin="7"/>
     </net>
     <net code="90" name="/STATUS">
-      <node ref="U1" pin="29"/>
       <node ref="D8" pin="1"/>
+      <node ref="U1" pin="29"/>
     </net>
     <net code="91" name="/ESP_SCLK">
-      <node ref="U1" pin="13"/>
       <node ref="J6" pin="3"/>
+      <node ref="U1" pin="13"/>
     </net>
     <net code="92" name="/ESP_MISO">
-      <node ref="U1" pin="14"/>
       <node ref="J6" pin="4"/>
+      <node ref="U1" pin="14"/>
     </net>
     <net code="93" name="/ESP_MOSI">
       <node ref="U1" pin="16"/>
       <node ref="J6" pin="5"/>
     </net>
     <net code="94" name="/THERMISTOR_INT">
-      <node ref="TH1" pin="2"/>
-      <node ref="C22" pin="1"/>
-      <node ref="R25" pin="1"/>
       <node ref="U1" pin="6"/>
+      <node ref="TH1" pin="2"/>
+      <node ref="R25" pin="1"/>
+      <node ref="C22" pin="1"/>
     </net>
     <net code="95" name="/DHT_DATA">
-      <node ref="U1" pin="37"/>
       <node ref="R64" pin="1"/>
+      <node ref="U1" pin="37"/>
       <node ref="U20" pin="2"/>
     </net>
     <net code="96" name="/THERMISTOR_VCC">
@@ -3952,9 +4114,9 @@
       <node ref="R22" pin="2"/>
     </net>
     <net code="97" name="/THERMISTOR_EXT">
-      <node ref="J11" pin="1"/>
       <node ref="C29" pin="1"/>
       <node ref="R27" pin="2"/>
+      <node ref="J11" pin="1"/>
       <node ref="U1" pin="7"/>
     </net>
     <net code="98" name="/NEXTION_RXD">
@@ -3974,10 +4136,10 @@
       <node ref="U1" pin="24"/>
     </net>
     <net code="102" name="/PHOTO">
-      <node ref="U1" pin="8"/>
       <node ref="C17" pin="1"/>
-      <node ref="Q3" pin="2"/>
+      <node ref="U1" pin="8"/>
       <node ref="R19" pin="2"/>
+      <node ref="Q3" pin="2"/>
     </net>
     <net code="103" name="/PIR">
       <node ref="U1" pin="12"/>
@@ -3988,48 +4150,48 @@
       <node ref="U1" pin="11"/>
     </net>
     <net code="105" name="Net-(D10-Pad1)">
-      <node ref="D10" pin="1"/>
       <node ref="R29" pin="2"/>
+      <node ref="D10" pin="1"/>
     </net>
     <net code="106" name="Net-(D12-Pad1)">
       <node ref="D12" pin="1"/>
       <node ref="R30" pin="2"/>
     </net>
     <net code="107" name="/ESP_GPIO25">
-      <node ref="U1" pin="10"/>
-      <node ref="R8" pin="1"/>
       <node ref="U4" pin="3"/>
+      <node ref="R8" pin="1"/>
+      <node ref="U1" pin="10"/>
     </net>
     <net code="108" name="/MCP23017_GPB0">
-      <node ref="U2" pin="1"/>
       <node ref="Q4" pin="1"/>
-      <node ref="J9" pin="17"/>
       <node ref="D10" pin="2"/>
+      <node ref="J9" pin="17"/>
+      <node ref="U2" pin="1"/>
     </net>
     <net code="109" name="Net-(U2-Pad11)">
       <node ref="U2" pin="11"/>
     </net>
     <net code="110" name="/I2C_SCL">
-      <node ref="U7" pin="4"/>
+      <node ref="U2" pin="12"/>
       <node ref="U6" pin="6"/>
       <node ref="U9" pin="4"/>
-      <node ref="R21" pin="2"/>
-      <node ref="U11" pin="1"/>
-      <node ref="U2" pin="12"/>
-      <node ref="J8" pin="4"/>
       <node ref="U1" pin="36"/>
+      <node ref="U11" pin="1"/>
+      <node ref="J8" pin="4"/>
+      <node ref="U7" pin="4"/>
       <node ref="U10" pin="2"/>
+      <node ref="R21" pin="2"/>
     </net>
     <net code="111" name="/I2C_SDA">
+      <node ref="J8" pin="3"/>
       <node ref="U6" pin="3"/>
-      <node ref="U9" pin="3"/>
-      <node ref="U2" pin="13"/>
       <node ref="R18" pin="2"/>
+      <node ref="U9" pin="3"/>
       <node ref="U10" pin="3"/>
       <node ref="U1" pin="33"/>
       <node ref="U11" pin="6"/>
-      <node ref="J8" pin="3"/>
       <node ref="U7" pin="3"/>
+      <node ref="U2" pin="13"/>
     </net>
     <net code="112" name="Net-(U2-Pad14)">
       <node ref="U2" pin="14"/>
@@ -4043,27 +4205,27 @@
       <node ref="JP2" pin="2"/>
     </net>
     <net code="115" name="/MCP23017_A2">
-      <node ref="JP3" pin="2"/>
       <node ref="U2" pin="17"/>
+      <node ref="JP3" pin="2"/>
     </net>
     <net code="116" name="/MCP23017_~RESET">
-      <node ref="U1" pin="26"/>
       <node ref="R1" pin="2"/>
+      <node ref="U1" pin="26"/>
       <node ref="U2" pin="18"/>
     </net>
     <net code="117" name="Net-(JP4-Pad1)">
-      <node ref="U2" pin="19"/>
       <node ref="JP4" pin="1"/>
+      <node ref="U2" pin="19"/>
     </net>
     <net code="118" name="/MCP23017_GPB1">
-      <node ref="D12" pin="2"/>
       <node ref="U2" pin="2"/>
-      <node ref="Q5" pin="1"/>
       <node ref="J9" pin="16"/>
+      <node ref="Q5" pin="1"/>
+      <node ref="D12" pin="2"/>
     </net>
     <net code="119" name="Net-(JP5-Pad1)">
-      <node ref="U2" pin="20"/>
       <node ref="JP5" pin="1"/>
+      <node ref="U2" pin="20"/>
     </net>
     <net code="120" name="/MCP23017_GPA0">
       <node ref="D15" pin="2"/>
@@ -4074,54 +4236,54 @@
     <net code="121" name="/MCP23017_GPA1">
       <node ref="J9" pin="3"/>
       <node ref="U2" pin="22"/>
-      <node ref="D16" pin="2"/>
       <node ref="U13" pin="1"/>
+      <node ref="D16" pin="2"/>
     </net>
     <net code="122" name="/MCP23017_GPA2">
+      <node ref="U2" pin="23"/>
       <node ref="J9" pin="4"/>
       <node ref="D17" pin="2"/>
-      <node ref="U2" pin="23"/>
       <node ref="U14" pin="1"/>
     </net>
     <net code="123" name="/MCP23017_GPA3">
-      <node ref="U15" pin="1"/>
       <node ref="J9" pin="5"/>
-      <node ref="D18" pin="2"/>
       <node ref="U2" pin="24"/>
+      <node ref="U15" pin="1"/>
+      <node ref="D18" pin="2"/>
     </net>
     <net code="124" name="/MCP23017_GPA4">
-      <node ref="U16" pin="1"/>
       <node ref="D19" pin="2"/>
-      <node ref="U2" pin="25"/>
+      <node ref="U16" pin="1"/>
       <node ref="J9" pin="6"/>
+      <node ref="U2" pin="25"/>
     </net>
     <net code="125" name="/MCP23017_GPA5">
-      <node ref="U2" pin="26"/>
       <node ref="J9" pin="7"/>
+      <node ref="U2" pin="26"/>
       <node ref="D20" pin="2"/>
       <node ref="U17" pin="1"/>
     </net>
     <net code="126" name="/MCP23017_GPA6">
       <node ref="U2" pin="27"/>
       <node ref="J9" pin="8"/>
-      <node ref="D21" pin="2"/>
       <node ref="U18" pin="1"/>
+      <node ref="D21" pin="2"/>
     </net>
     <net code="127" name="/MCP23017_GPA7">
-      <node ref="U2" pin="28"/>
       <node ref="J9" pin="9"/>
-      <node ref="D22" pin="2"/>
+      <node ref="U2" pin="28"/>
       <node ref="U19" pin="1"/>
+      <node ref="D22" pin="2"/>
     </net>
     <net code="128" name="/MCP23017_GPB2">
       <node ref="Q6" pin="1"/>
-      <node ref="J9" pin="15"/>
       <node ref="U2" pin="3"/>
+      <node ref="J9" pin="15"/>
       <node ref="D14" pin="2"/>
     </net>
     <net code="129" name="/MCP23017_GPB3">
-      <node ref="U2" pin="4"/>
       <node ref="J9" pin="14"/>
+      <node ref="U2" pin="4"/>
     </net>
     <net code="130" name="/MCP23017_GPB4">
       <node ref="U2" pin="5"/>
@@ -4136,9 +4298,9 @@
       <node ref="U2" pin="7"/>
     </net>
     <net code="133" name="/MCP23017_GPB7">
+      <node ref="JP16" pin="2"/>
       <node ref="J9" pin="10"/>
       <node ref="U2" pin="8"/>
-      <node ref="JP16" pin="2"/>
     </net>
     <net code="134" name="Net-(U10-Pad5)">
       <node ref="U10" pin="5"/>
@@ -4155,10 +4317,10 @@
       <node ref="C14" pin="1"/>
     </net>
     <net code="138" name="/C_TERM">
+      <node ref="J1" pin="2"/>
+      <node ref="J1" pin="3"/>
       <node ref="D2" pin="2"/>
       <node ref="J10" pin="1"/>
-      <node ref="J1" pin="3"/>
-      <node ref="J1" pin="2"/>
       <node ref="RV1" pin="2"/>
     </net>
     <net code="139" name="Net-(JP10-Pad2)">
@@ -4171,16 +4333,16 @@
       <node ref="R16" pin="2"/>
     </net>
     <net code="141" name="Net-(C15-Pad2)">
-      <node ref="U5" pin="8"/>
       <node ref="L1" pin="1"/>
       <node ref="C15" pin="2"/>
+      <node ref="U5" pin="8"/>
     </net>
     <net code="142" name="Net-(J11-Pad3)">
       <node ref="J11" pin="3"/>
     </net>
     <net code="143" name="Net-(D8-Pad2)">
-      <node ref="R28" pin="2"/>
       <node ref="D8" pin="2"/>
+      <node ref="R28" pin="2"/>
     </net>
     <net code="144" name="Net-(D7-Pad2)">
       <node ref="D7" pin="2"/>
@@ -4199,21 +4361,21 @@
       <node ref="D6" pin="2"/>
     </net>
     <net code="148" name="Net-(D21-Pad1)">
-      <node ref="D21" pin="1"/>
       <node ref="R38" pin="1"/>
+      <node ref="D21" pin="1"/>
     </net>
     <net code="149" name="Net-(D22-Pad1)">
-      <node ref="D22" pin="1"/>
       <node ref="R39" pin="1"/>
+      <node ref="D22" pin="1"/>
     </net>
     <net code="150" name="Net-(J1-Pad1)">
-      <node ref="J1" pin="1"/>
       <node ref="J3" pin="1"/>
+      <node ref="J1" pin="1"/>
     </net>
     <net code="151" name="/THERMISTOR_1V1">
-      <node ref="R25" pin="2"/>
-      <node ref="R22" pin="1"/>
       <node ref="R27" pin="1"/>
+      <node ref="R22" pin="1"/>
+      <node ref="R25" pin="2"/>
       <node ref="R23" pin="2"/>
     </net>
     <net code="152" name="Net-(D14-Pad1)">
@@ -4225,28 +4387,28 @@
       <node ref="F1" pin="1"/>
     </net>
     <net code="154" name="Net-(F1-Pad2)">
+      <node ref="J3" pin="8"/>
+      <node ref="J3" pin="6"/>
       <node ref="J3" pin="2"/>
       <node ref="J3" pin="4"/>
-      <node ref="J3" pin="6"/>
-      <node ref="J3" pin="8"/>
       <node ref="F1" pin="2"/>
     </net>
     <net code="155" name="+VDC">
-      <node ref="C12" pin="1"/>
-      <node ref="U5" pin="3"/>
-      <node ref="U5" pin="2"/>
       <node ref="C13" pin="1"/>
-      <node ref="D2" pin="1"/>
       <node ref="C7" pin="1"/>
       <node ref="C9" pin="1"/>
+      <node ref="C12" pin="1"/>
+      <node ref="D2" pin="1"/>
+      <node ref="U5" pin="3"/>
+      <node ref="U5" pin="2"/>
     </net>
     <net code="156" name="Net-(D15-Pad1)">
       <node ref="D15" pin="1"/>
       <node ref="R32" pin="1"/>
     </net>
     <net code="157" name="/MCP23017_INTB">
-      <node ref="JP4" pin="2"/>
       <node ref="R3" pin="2"/>
+      <node ref="JP4" pin="2"/>
       <node ref="U1" pin="5"/>
     </net>
     <net code="158" name="Net-(U1-Pad27)">
@@ -4261,19 +4423,19 @@
     <net code="161" name="Net-(C10-Pad1)">
       <node ref="JP7" pin="2"/>
       <node ref="JP3" pin="3"/>
-      <node ref="U2" pin="9"/>
       <node ref="JP2" pin="3"/>
-      <node ref="C10" pin="1"/>
       <node ref="JP1" pin="3"/>
+      <node ref="C10" pin="1"/>
+      <node ref="U2" pin="9"/>
     </net>
     <net code="162" name="/MCP23017_INTA">
+      <node ref="JP5" pin="2"/>
       <node ref="R2" pin="2"/>
       <node ref="U1" pin="4"/>
-      <node ref="JP5" pin="2"/>
     </net>
     <net code="163" name="/TMP117_ALERT">
-      <node ref="JP16" pin="1"/>
       <node ref="U11" pin="3"/>
+      <node ref="JP16" pin="1"/>
     </net>
     <net code="164" name="Net-(JP17-Pad2)">
       <node ref="JP17" pin="2"/>
@@ -4284,13 +4446,13 @@
       <node ref="U9" pin="5"/>
     </net>
     <net code="166" name="Net-(C20-Pad2)">
-      <node ref="U6" pin="1"/>
       <node ref="R20" pin="2"/>
+      <node ref="U6" pin="1"/>
       <node ref="C20" pin="2"/>
     </net>
     <net code="167" name="Net-(JP14-Pad2)">
-      <node ref="JP14" pin="2"/>
       <node ref="U7" pin="5"/>
+      <node ref="JP14" pin="2"/>
     </net>
     <net code="168" name="/~DTR">
       <node ref="J5" pin="6"/>
@@ -4299,30 +4461,30 @@
       <node ref="U3" pin="2"/>
     </net>
     <net code="169" name="Net-(JP11-Pad1)">
-      <node ref="JP11" pin="1"/>
       <node ref="Q1" pin="3"/>
+      <node ref="JP11" pin="1"/>
     </net>
     <net code="170" name="Net-(JP12-Pad1)">
-      <node ref="Q2" pin="3"/>
       <node ref="JP12" pin="1"/>
+      <node ref="Q2" pin="3"/>
     </net>
     <net code="171" name="/~RTS">
-      <node ref="JP8" pin="1"/>
       <node ref="Q1" pin="2"/>
       <node ref="U3" pin="3"/>
       <node ref="R15" pin="2"/>
+      <node ref="JP8" pin="1"/>
     </net>
     <net code="172" name="Net-(Q2-Pad1)">
-      <node ref="Q2" pin="1"/>
       <node ref="R15" pin="1"/>
+      <node ref="Q2" pin="1"/>
     </net>
     <net code="173" name="Net-(Q1-Pad1)">
-      <node ref="Q1" pin="1"/>
       <node ref="R14" pin="1"/>
+      <node ref="Q1" pin="1"/>
     </net>
     <net code="174" name="Net-(J5-Pad2)">
-      <node ref="JP8" pin="2"/>
       <node ref="J5" pin="2"/>
+      <node ref="JP8" pin="2"/>
     </net>
     <net code="175" name="Net-(U3-Pad10)">
       <node ref="U3" pin="10"/>
@@ -4357,49 +4519,49 @@
       <node ref="U3" pin="16"/>
     </net>
     <net code="185" name="/USB_D+">
-      <node ref="J2" pin="3"/>
       <node ref="U3" pin="15"/>
+      <node ref="J2" pin="3"/>
     </net>
     <net code="186" name="Net-(J2-Pad4)">
       <node ref="J2" pin="4"/>
     </net>
-    <net code="187" name="Net-(D3-Pad2)">
-      <node ref="D3" pin="2"/>
+    <net code="187" name="Net-(D3-Pad1)">
+      <node ref="D3" pin="1"/>
       <node ref="R9" pin="1"/>
     </net>
-    <net code="188" name="Net-(D4-Pad2)">
-      <node ref="D4" pin="2"/>
+    <net code="188" name="Net-(D4-Pad1)">
+      <node ref="D4" pin="1"/>
       <node ref="R10" pin="1"/>
     </net>
     <net code="189" name="Net-(R10-Pad2)">
-      <node ref="U3" pin="22"/>
       <node ref="R10" pin="2"/>
+      <node ref="U3" pin="22"/>
     </net>
     <net code="190" name="Net-(R9-Pad2)">
-      <node ref="R9" pin="2"/>
       <node ref="U3" pin="23"/>
+      <node ref="R9" pin="2"/>
     </net>
     <net code="191" name="Net-(C11-Pad1)">
-      <node ref="U3" pin="17"/>
-      <node ref="D3" pin="1"/>
       <node ref="U3" pin="4"/>
-      <node ref="C11" pin="1"/>
-      <node ref="D4" pin="1"/>
+      <node ref="D4" pin="2"/>
+      <node ref="U3" pin="17"/>
+      <node ref="D3" pin="2"/>
       <node ref="R11" pin="1"/>
+      <node ref="C11" pin="1"/>
     </net>
     <net code="192" name="/USB_~RESET">
-      <node ref="R5" pin="2"/>
       <node ref="U3" pin="19"/>
-      <node ref="R4" pin="1"/>
       <node ref="R13" pin="2"/>
+      <node ref="R5" pin="2"/>
+      <node ref="R4" pin="1"/>
     </net>
     <net code="193" name="Net-(SW1-Pad1)">
       <node ref="SW1" pin="1"/>
     </net>
     <net code="194" name="Net-(D2-Pad3)">
       <node ref="D2" pin="3"/>
-      <node ref="RV1" pin="1"/>
       <node ref="SW1" pin="3"/>
+      <node ref="RV1" pin="1"/>
     </net>
     <net code="195" name="Net-(C6-Pad1)">
       <node ref="C6" pin="1"/>
@@ -4410,19 +4572,19 @@
       <node ref="U4" pin="5"/>
     </net>
     <net code="197" name="/NEXTION_PWR">
-      <node ref="U4" pin="6"/>
       <node ref="JP6" pin="1"/>
       <node ref="J4" pin="4"/>
       <node ref="R12" pin="2"/>
+      <node ref="U4" pin="6"/>
     </net>
     <net code="198" name="Net-(D5-Pad2)">
       <node ref="R13" pin="1"/>
       <node ref="D5" pin="2"/>
     </net>
     <net code="199" name="/USB_VBUS">
+      <node ref="R4" pin="2"/>
       <node ref="J2" pin="1"/>
       <node ref="D1" pin="2"/>
-      <node ref="R4" pin="2"/>
     </net>
   </nets>
 </export>

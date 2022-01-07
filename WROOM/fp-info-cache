@@ -1,4 +1,4 @@
-18549917235418137
+18559497800765888
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -6124,6 +6124,55 @@ capacitor tantalum
 0
 2
 2
+ClimateSprinklerController
+ClimateSprinklerControllerQR
+
+
+0
+0
+0
+ClimateSprinklerController
+DFN-6-1EP_2.44x2.44mm_P0.8mm_EP1.25x1.7mm
+DFN6 3*3 MM, 0.95 PITCH; CASE 506AH-01 (see ON Semiconductor 506AH.PDF)
+DFN 0.95
+0
+9
+7
+ClimateSprinklerController
+ESP32-WROVER
+Single 2.4 GHz Wi-Fi and Bluetooth combo chip https://www.espressif.com/sites/default/files/documentation/esp32-wrover_datasheet_en.pdf
+Single 2.4 GHz Wi-Fi and Bluetooth combo  chip
+0
+64
+39
+ClimateSprinklerController
+PhoenixContact_SPTAF_1_12-3.5-IL_1x12_P3.50mm_Vertical
+Phoenix SPTAF 1/12-3,5-IL - 1862039
+Phoenix, SPTAF, 1862039
+0
+24
+12
+ClimateSprinklerController
+RV_Disc_D7mm_W4mm_P5mm
+Varistor, diameter 7mm, width 4mm, pitch 5mm
+varistor SIOV
+0
+2
+2
+ClimateSprinklerController
+RotaryEncoder_Bourns_PEC11S-Switch_Vertical_H9.5mm
+Bourns rotary encoder, PEC11A... with switch, vertical shaft, https://www.bourns.com/docs/Product-Datasheets/PEC11S.pdf
+rotary encoder
+0
+11
+6
+ClimateSprinklerController
+TO-225-3_Vertical
+TO-225-3, Vertical, RM 2.39mm
+TO-225-3, Vertical, RM 2.39mm
+0
+3
+3
 Connector
 Banana_Jack_1Pin
 Single banana socket, footprint - 6mm drill
@@ -80919,10 +80968,3 @@ varistor SIOV
 0
 2
 2
-project_footprints
-DFN-6-1EP_2.45x2.45mm_P0.8mm_EP1.25x1.7mm
-DFN6 2.45x2.45 MM, 0.8 PITCH
-DFN 0.8
-0
-9
-7
